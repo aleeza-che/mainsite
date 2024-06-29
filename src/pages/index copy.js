@@ -73,7 +73,7 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/gatsby-icon.png"
+        src="../images/example.png"
         loading="eager"
         width={64}
         quality={95}
@@ -85,7 +85,15 @@ const IndexPage = () => (
       Dependent Well is not a brand, it is not a lifestyle, it is the life with Christ.
       </h1>
       <p className={styles.intro}>
-        The Kingdom of YHWH (God) is advancing in us only when we are living dependent on the Living Independent Well.
+        <b>Example pages:</b>{" "}
+        {samplePageLinks.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <Link to={link.url}>{link.text}</Link>
+            {i !== samplePageLinks.length - 1 && <> · </>}
+          </React.Fragment>
+        ))}
+        <br />
+        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>

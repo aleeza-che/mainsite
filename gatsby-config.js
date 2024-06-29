@@ -9,12 +9,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Dependent Well`,
+    description: `The Kingdom of YHWH (God) is advancing in us only when we are living dependent on the Living Independent Well.`,
+    author: `@aleezameansjoy`,
+    siteUrl: `https://dependentwell.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

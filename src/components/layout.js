@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          Copyright © {new Date().getFullYear()} &middot;
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="/">Dependent Well.</a> All rights reserved.
         </footer>
       </div>
     </>
