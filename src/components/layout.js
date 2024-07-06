@@ -21,6 +21,28 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+
+  const moreLinks = [
+    { text: "Join our Social Network", url: "https://well-being-journey.mn.co/" },
+    {
+      text: "The Kings College",
+      url: "/the-kings-college",
+    },
+    {
+      text: "Bible Reading",
+      url: "/bible-reading",
+    },
+    {
+      text: "Young Fam",
+      url: "/young-fam",
+    },
+    {
+      text: "Team Hunger 4orce",
+      url: "/th4",
+    },
+  ]
+  
 
   return (
     <>
@@ -33,6 +55,12 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        {moreLinks.map((link, i) => (
+      <React.Fragment key={link.url}>
+        <a href={`${link.url}${utmParameters}`}  target={`_blank`}>{link.text}</a>
+        {i !== moreLinks.length - 1 && <> · </>}
+      </React.Fragment>
+    ))}
         <footer
           style={{
             marginTop: `var(--space-5)`,

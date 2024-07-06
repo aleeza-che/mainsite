@@ -1,73 +1,35 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    text: "Bible Reading",
+    url: "/bible-reading",
+    badge: "../images/fpc.png",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Encouraging a love of reading scripture as tool to learn more about Yahweh and to enrich our walks with Him individually and collectively.",
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Young Fam",
+    url: "/young-fam",
+    badge: "../images/yf.png",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Team Hunger 4orce",
+    url: "/th4",
+    badge: "../images/th4.png",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "A community of iron sharpening iron, walking out the call to be part of the offensive team for the Kingdom; individually, collectively and in ministry.",
   },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
 ]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+const img = getImage(links.badge)
 
 const IndexPage = () => (
   <Layout>
@@ -88,25 +50,22 @@ const IndexPage = () => (
         The Kingdom of YHWH (God) is advancing in us only when we are living dependent on the Living Independent Well.
       </p>
     </div>
+    <h5>Find Your Tribe</h5>
     <ul className={styles.list}>
       {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
+        <li key={link.url } className={styles.listItem}>
           <a
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
           >
+<GatsbyImage
+          image = {img}/>
             {link.text} ↗
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
       ))}
     </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 

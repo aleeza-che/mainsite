@@ -5,15 +5,13 @@ import { Link } from "gatsby"
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
+    text: "Tribes",
+    url: "/",
     badge: false,
     description:
-      "A simple example of linking to another page within a Gatsby site",
+      "Community at Dependent Well",
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "The King's College", url: "/the-kings-college" },
 ]
 const Header = ({ siteTitle }) => (
   <header
@@ -27,7 +25,8 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div style={{
-    width:`20%`
+    width:`20%`,
+    display: `flex`
   }}>
     <Link
       to="/"
