@@ -11,6 +11,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -21,32 +26,34 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
-  const moreLinks = [
-    { text: "Join our Social Network", url: "https://well-being-journey.mn.co/" },
-    {
-      text: "The Kings College",
-      url: "/the-kings-college",
-    },
-    {
-      text: "Bible Reading",
-      url: "/bible-reading",
-    },
-    {
-      text: "Young Fam",
-      url: "/young-fam",
-    },
-    {
-      text: "Team Hunger 4orce",
-      url: "/th4",
-    },
-  ]
   
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Navbar expand="lg" className="bg-body-tertiary" fixed="bottom">
+      <Container>Copyright © {new Date().getFullYear()} &middot;&nbsp;
+      <Navbar.Brand href="/">{data.site.siteMetadata?.title}</Navbar.Brand>&nbsp;All rights reserved.
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav className="me-auto">
+            
+
+          </Nav>
+          <Nav>
+          <Nav.Link href="https://well-being-journey.mn.co/" target="_blank">Join our Social Network</Nav.Link>
+          <Nav.Link href="/the-kings-college">The King's College</Nav.Link>
+
+          <Nav.Link href="/bible-reading">Family Bible Reading</Nav.Link>
+              <Nav.Link href="/young-fam">
+                Young Fam
+              </Nav.Link>
+              <Nav.Link href="/th4">Team Hunger 4orce</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       <div
         style={{
           margin: `0 auto`,
@@ -54,23 +61,9 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
+        
         <main>{children}</main>
-        {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}  target={`_blank`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          Copyright © {new Date().getFullYear()} &middot;
-          {` `}
-          <a href="/">Dependent Well.</a> All rights reserved.
-        </footer>
+        
       </div>
     </>
   )
