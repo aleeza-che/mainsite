@@ -32,28 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Navbar expand="lg" className="bg-body-tertiary" fixed="bottom">
-      <Container>Copyright © {new Date().getFullYear()} &middot;&nbsp;
-      <Navbar.Brand href="/">{data.site.siteMetadata?.title}</Navbar.Brand>&nbsp;All rights reserved.
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="justify-content-end">
-          <Nav className="me-auto">
-            
 
-          </Nav>
-          <Nav>
-          <Nav.Link href="https://well-being-journey.mn.co/" target="_blank">Join our Social Network</Nav.Link>
-          <Nav.Link href="/the-kings-college">The King's College</Nav.Link>
-
-          <Nav.Link href="/bible-reading">Family Bible Reading</Nav.Link>
-              <Nav.Link href="/young-fam">
-                Young Fam
-              </Nav.Link>
-              <Nav.Link href="/th4">Team Hunger 4orce</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
       <div
         style={{
           margin: `0 auto`,
@@ -61,10 +40,36 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-        
+        <Container>
         <main>{children}</main>
-        
+        </Container>
       </div>
+
+    <Nav className="justify-content-center bg-body-theme-footer" expand="large">
+    <Container className="bg-body-theme-footer border-bottom d-inline-flex justify-content-center pb-5 pt-5 col-sm-6">
+
+        <Nav.Item>
+          <Nav.Link href="https://well-being-journey.mn.co/" target="_blank">Join our Social Network</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/bible-reading">Family Bible Reading</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/th4">Team Hunger 4orce</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/the-kings-college">The King's College</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/young-fam">Young Fam</Nav.Link>
+        </Nav.Item>
+        </Container>
+      </Nav>
+
+      <Nav className="justify-content-center bg-body-theme-footer pb-5 pt-5">
+      <div className="text-center"> Copyright © {new Date().getFullYear()}&nbsp; &middot;&nbsp;&nbsp;
+      <a href="/">{data.site.siteMetadata?.title}</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;All rights reserved. </div>
+      </Nav>
     </>
   )
 }

@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
 
 
 
-<Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+<Navbar expand="lg" className="bg-body-theme" sticky="top">
       <Container>
         <Navbar.Brand href="/">
     <img

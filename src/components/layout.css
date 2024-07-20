@@ -1,10 +1,21 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
+  --color-text: #292929;
   --color-primary: #7026b9;
+  --theme-ui-colors-base: #292929;
+  --theme-ui-colors-secondary: #686461;
+  --theme-ui-colors-tertiary: #958E8E;
+  --theme-ui-colors-highlight: #C29967;
+  --theme-ui-colors-background: #F5F0EB;
+  --theme-ui-colors-border: #DCD8D3;
+  --theme-ui-colors-button: #E9E4DF;
+  --theme-ui-colors-text: #292929;
+  --theme-ui-colors-code: #E9E5E0;
+  --color-background: #F5F0EB;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  --theme-ui-colors-border:#DCD8D3;
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
@@ -42,6 +53,7 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  background: var(--color-background);
 }
 
 abbr[title] {
@@ -210,6 +222,29 @@ pre tt:after {
   content: none;
 }
 
-.bg-body-tertiary {
-  --bs-bg-opacity: 1;
+.bg-body-theme {
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--theme-ui-colors-border);
+border-width: 1px;
+}
+
+.bg-body-theme-footer {
+   background-color: var(--color-text);
+  color: var(--theme-ui-colors-tertiary);
+  font-size: 1rem;
+}
+
+.bg-body-theme-footer a, .bg-body-theme-footer .nav-link a{
+color: #fff;
+  text-decoration: none;
+}
+
+
+
+.bg-body-theme-footer a:hover {
+color: var(--theme-ui-colors-highlight);
+}
+
+.bg-body-theme-footer .navbar-brand {
+  font-size: 1rem;
 }
