@@ -45,8 +45,8 @@ const Layout = ({ children }) => {
         </Container>
       </div>
 
-    <Nav className="justify-content-center bg-body-theme-footer" expand="large">
-    <Container className="bg-body-theme-footer border-bottom d-inline-flex justify-content-center pb-5 pt-5 col-sm-6">
+    <Navbar className="justify-content-center bg-body-theme-footer" expand="large" fixed="bottom">
+    <Nav className="justify-content-center bg-body-theme-footer pb-5 pt-5">
 
         <Nav.Item>
           <Nav.Link href="https://well-being-journey.mn.co/" target="_blank">Join our Social Network</Nav.Link>
@@ -63,13 +63,15 @@ const Layout = ({ children }) => {
         <Nav.Item>
           <Nav.Link href="/young-fam">Young Fam</Nav.Link>
         </Nav.Item>
-        </Container>
-      </Nav>
-
-      <Nav className="justify-content-center bg-body-theme-footer pb-5 pt-5">
-      <div className="text-center"> Copyright © {new Date().getFullYear()}&nbsp; &middot;&nbsp;&nbsp;
+        <div className="text-center"> Copyright © {new Date().getFullYear()}&nbsp; &middot;&nbsp;&nbsp;
       <a href="/">{data.site.siteMetadata?.title}</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;All rights reserved. </div>
-      </Nav>
+        </Nav>
+      
+      </Navbar>
+
+     
+
+    
     </>
   )
 }
