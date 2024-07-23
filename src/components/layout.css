@@ -325,3 +325,21 @@ color: var(--theme-ui-colors-highlight);
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+
+.navbar-brand{
+background: var(--theme-ui-colors-base);
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  
+}
+.navbar-brand:hover{
+color: var(--theme-ui-colors-highlight);  
+}
+
+.tribe .col a{
+  text-decoration: none;
+  color: unset;
+}

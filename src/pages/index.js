@@ -1,71 +1,101 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
-const links = [
-  {
-    text: "Bible Reading",
-    url: "/bible-reading",
-    badge: "../images/fpc.png",
-    description:
-      "Encouraging a love of reading scripture as tool to learn more about Yahweh and to enrich our walks with Him individually and collectively.",
-  },
-  {
-    text: "Young Fam",
-    url: "/young-fam",
-    badge: "../images/yf.png",
-    description:
-      "Nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.",
-  },
-  {
-    text: "Team Hunger 4orce",
-    url: "/th4",
-    badge: "../images/th4.png",
-    description:
-      "A community of iron sharpening iron, walking out the call to be part of the offensive team for the Kingdom; individually, collectively and in ministry.",
-  },
+import Stack from 'react-bootstrap/Stack';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
+import { Link } from "gatsby"
 
-]
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-const img = getImage(links.badge)
+
 
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/gatsby-icon.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
+    <Stack gap={4}>
+
+      <h1 className="pt-5">
       Dependent Well is not a brand, it is not a lifestyle, it is the life with Christ.
       </h1>
-      <p className={styles.intro}>
+      <h5 className={styles.intro}>
         The Kingdom of YHWH (God) is advancing in us only when we are living dependent on the Living Independent Well.
-      </p>
+      </h5>
+      </Stack>
+
     </div>
-    <h5>Find Your Tribe</h5>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url } className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-<GatsbyImage
-          image = {img}/>
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
+    <h5 className="pt-5">Find Your Tribe</h5>
+    
+
+<Row xs={1} md={2} className="g-4 tribe">
+<Col>
+<Link to="/bible-reading"><Card border="dark" className="flex-row" style={{ padding: `10px 20px`,}}>
+          <StaticImage
+      style={{ margin: `15px 0`,
+    maxWidth:`90px`,
+    height:`100%`
+    }}
+      src="../images/fpc.png"
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Family Prayer Call logo"
+      title="Family Prayer Call Bible Reading"
+    />
+            <Card.Body>
+              <Card.Title><a href="/bible-reading">Bible Reading</a></Card.Title>
+              <Card.Text>
+              Encouraging a love of reading scripture to learn more about Yahweh and to enrich our walks with Him individually and collectively.
+
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Link>
+        </Col>
+        <Col>
+        <Link to="/young-fam"><Card border="dark" className="flex-row" style={{ padding: `10px 20px`,}}>
+          <StaticImage
+      style={{ margin: `15px 0`,
+      maxWidth:`90px`,
+      height:`100%`
+      }}     src="../images/yf.png"
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Young Fam logo"
+      title="Young Fam"
+    />
+            <Card.Body>
+              <Card.Title>Young Fam</Card.Title>
+              <Card.Text>
+              Nurturing personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.
+
+              </Card.Text>
+            </Card.Body>
+          </Card></Link>
+        </Col>
+        <Col>
+        <Link to="/th4"><Card border="dark" className="flex-row" style={{ padding: `10px 20px`,}}>
+          <StaticImage
+      style={{ margin: `15px 0`,
+      maxWidth:`90px`,
+      height:`100%`
+      }}     src="../images/th4.png"
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Team Hunger 4orce logo"
+      title="Team Hunger 4orce"
+
+    />
+            <Card.Body>
+              <Card.Title>Team Hunger 4orce</Card.Title>
+              <Card.Text>
+              A community of iron sharpening iron, walking out the call to be part of the offensive team for the Kingdom; individually, collectively and in ministry.
+
+              </Card.Text>
+            </Card.Body>
+          </Card></Link>
+        </Col>
+    </Row>
   </Layout>
 )
 

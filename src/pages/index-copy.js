@@ -51,18 +51,22 @@ const moreLinks = [
   {
     text: "Documentation",
     url: "https://gatsbyjs.com/docs/",
+    badge: "../images/fpc.png"
   },
   {
     text: "Starters",
     url: "https://gatsbyjs.com/starters/",
+    badge: "../images/fpc.png"
   },
   {
     text: "Showcase",
     url: "https://gatsbyjs.com/showcase/",
+    badge: "../images/fpc.png"
   },
   {
     text: "Contributing",
     url: "https://www.gatsbyjs.com/contributing/",
+    badge: "../images/fpc.png"
   },
   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
@@ -73,7 +77,7 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/fpc.png"
         loading="eager"
         width={64}
         quality={95}
@@ -102,7 +106,15 @@ const IndexPage = () => (
           <a
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
-          >
+          ><StaticImage
+          src="{link.badge}"
+          loading="eager"
+          width={64}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
             {link.text} ↗
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>

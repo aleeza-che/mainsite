@@ -15,6 +15,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Col from 'react-bootstrap/Col';
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,7 +37,7 @@ const Layout = ({ children }) => {
 
       <div
         style={{
-          margin: `0 auto`,
+          margin: `100px auto 600px auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
         }}
@@ -45,28 +47,20 @@ const Layout = ({ children }) => {
         </Container>
       </div>
 
-    <Navbar className="justify-content-center bg-body-theme-footer" expand="large" fixed="bottom">
-    <Nav className="justify-content-center bg-body-theme-footer pb-5 pt-5">
+    <Navbar className="justify-content-center bg-body-theme-footer flex-column" expand="lg">
 
-        <Nav.Item>
+    <Nav className="justify-content-center bg-body-theme-footer pb-5 pt-5">
           <Nav.Link href="https://well-being-journey.mn.co/" target="_blank">Join our Social Network</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="/bible-reading">Family Bible Reading</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="/th4">Team Hunger 4orce</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="/the-kings-college">The King's College</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
           <Nav.Link href="/young-fam">Young Fam</Nav.Link>
-        </Nav.Item>
-        <div className="text-center"> Copyright © {new Date().getFullYear()}&nbsp; &middot;&nbsp;&nbsp;
-      <a href="/">{data.site.siteMetadata?.title}</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;All rights reserved. </div>
         </Nav>
+        <Col>
+        <div className="text-center pb-5"> Copyright © {new Date().getFullYear()}&nbsp; &middot;&nbsp;&nbsp;
+      <a href="/">{data.site.siteMetadata?.title}</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;All rights reserved. </div>
       
+      </Col>
       </Navbar>
 
      
