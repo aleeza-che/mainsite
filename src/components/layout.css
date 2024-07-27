@@ -4,7 +4,7 @@
   --color-primary: #7026b9;
   --theme-ui-colors-base: #292929;
   --theme-ui-colors-secondary: #686461;
-  --theme-ui-colors-tertiary: #958E8E;
+  --theme-ui-colors-tertiary: #726F6F;
   --theme-ui-colors-highlight: #C29967;
   --theme-ui-colors-background: #F5F0EB;
   --theme-ui-colors-border: #DCD8D3;
@@ -32,9 +32,10 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: 54rem;
+  --size-content: 77rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -176,7 +177,6 @@ li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
 p {
-  max-width: 680px;
 }
 code {
   font-size: 0.875rem;
@@ -221,7 +221,9 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
-
+a {
+  color: inherit;
+}
 .bg-body-theme {
   background-color: var(--color-background);
   border-bottom: 1px solid var(--theme-ui-colors-border);
@@ -333,13 +335,84 @@ background: var(--theme-ui-colors-base);
   border-radius: 12px;
   color: #fff;
   font-size: 18px;
-  
+
 }
 .navbar-brand:hover{
-color: var(--theme-ui-colors-highlight);  
+color: var(--theme-ui-colors-highlight);
 }
 
 .tribe .col a{
   text-decoration: none;
   color: unset;
+}
+
+.summaries .accordion {
+  margin-bottom: var(--space-2);
+}
+
+.summaries .accordion-button:not(.collapsed) {
+  background-color: var(--theme-ui-colors-tertiary);
+  border: 1px solid var(--theme-ui-colors-border);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.summaries .accordion .accordion-body a {
+color: inherit;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem var(--theme-ui-colors-tertiary);
+}
+
+.accordion-button:not(.collapsed):after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.summaries .accordion:first-child .accordion-body a {
+  color: inherit;
+  font-size: 25px;
+}
+
+.callout{
+  display: flex;
+}
+
+
+.sub-head{
+  background: #fff;
+  padding: 0 130px 50px 130px;
+  display: flex;
+}
+
+.sub-logo-cont{
+  min-width: 133px;
+}
+
+.sub-head h2 {
+  margin-top: var(--space-2);
+  margin-bottom:  var(--space-2);
+}
+.sub-head-container {
+  background: #fff;
+  padding: 130px var(--space-3) var(--space-3) var(--space-3);
+  margin-bottom: var(--space-3);
+}
+.modal-90w {
+  max-width: none !important;
+    width: 90%;}
+.btn-primary {
+  background: var(--theme-ui-colors-button);
+    border: 1px solid var(--theme-ui-colors-border);
+    color: var(--theme-ui-colors-secondary);
+    padding: 0.5rem;
+    border-radius: 2px;
+    margin: 0px;
+    text-decoration: none;
+    transition: 0.3s;}
+.btn-primary:hover {
+  background: var(--theme-ui-colors-highlight);
+  border-color: var(--theme-ui-colors-highlight);
+  color: white;
 }

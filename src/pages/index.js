@@ -16,7 +16,11 @@ const IndexPage = () => (
     <div className={styles.textCenter}>
     <Stack gap={4}>
 
-      <h1 className="pt-5">
+      <h1 className="pt-5" style={{
+    maxWidth:`950px`,
+marginLeft:`auto`,
+marginRight:`auto`
+    }}>
       Dependent Well is not a brand, it is not a lifestyle, it is the life with Christ.
       </h1>
       <h5 className={styles.intro}>
@@ -25,10 +29,10 @@ const IndexPage = () => (
       </Stack>
 
     </div>
-    <h5 className="pt-5">Find Your Tribe</h5>
+    <h4 className="pt-5">Find Your Tribe</h4>
     
 
-<Row xs={1} md={2} className="g-4 tribe">
+<Row xs={1} md={3} className="g-4 tribe">
 <Col>
 <Link to="/bible-reading"><Card border="dark" className="flex-row" style={{ padding: `10px 20px`,}}>
           <StaticImage
@@ -89,7 +93,7 @@ const IndexPage = () => (
             <Card.Body>
               <Card.Title>Team Hunger 4orce</Card.Title>
               <Card.Text>
-              A community of iron sharpening iron, walking out the call to be part of the offensive team for the Kingdom; individually, collectively and in ministry.
+              Community, walking out the call to be part of the offensive team for the Kingdom; individually, collectively and in ministry.
 
               </Card.Text>
             </Card.Body>

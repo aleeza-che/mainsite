@@ -4,6 +4,9 @@ import { withPrefix, Link } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
+import Accordion from 'react-bootstrap/Accordion';
+import Example from "../components/current-details-summary"
+import Button from 'react-bootstrap/Button';
 
 
 const SecondPage = () => (
@@ -12,7 +15,7 @@ const SecondPage = () => (
         <meta name="og:image" content={withPrefix('images/yf.png')} data-react-helmet="true"></meta>
     </Helmet>
     <Seo title="Young Fam" description="To nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together." />
-
+<div className="sub-head-container">
     <div class="sub-head"><div class="sub-logo-cont"><Link to="/young-fam/"><StaticImage
     style={{ margin: `0` }}
     src="../images/yf.png"
@@ -20,14 +23,11 @@ const SecondPage = () => (
     quality={95}
     formats={["AUTO", "WEBP", "AVIF"]}
     alt="Young Fam logo"
-  /></Link></div>
-    <div><p><h2>Young Fam Thursday</h2><h4>7:30pm EST</h4><strong>Purpose:</strong> To nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.</p></div></div>
-    <hr/>
-    <p class='callout'><img src="https://withgladness.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4cd21ba5-79ed-438c-9459-69f01730fe52%2Fdownload_(1).gif?table=block&id=db8c1e39-adb2-4f45-bbb2-cdfc2b5e732d&spaceId=0ce637b9-c38a-4650-bcd8-6c8195a3ac77&userId=&cache=v2" width="30" alt=""
-    style={{ marginBottom: `0rem` }}
-    />  <p>  Click the little black triangle to access links of that weeks readings. <b>Current reading is in bold.</b></p>
+  /></Link>
+  </div>
+  <div><p><h2>Young Fam Thursday</h2><h4>7:30pm EST</h4><strong>Purpose:</strong> To nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.</p></div></div>
 
-  </p>
+  </div>
 
     <details><summary>Bible Overview</summary>
         <div>
