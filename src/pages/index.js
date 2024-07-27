@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+import {StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -13,7 +13,8 @@ import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
+    <div className={`general`}>
+    <div className={`index ${styles.textCenter}`}>
     <Stack gap={4}>
 
       <h1 className="pt-5" style={{
@@ -100,6 +101,7 @@ marginRight:`auto`
           </Card></Link>
         </Col>
     </Row>
+    </div>
   </Layout>
 )
 

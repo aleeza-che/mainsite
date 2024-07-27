@@ -15,6 +15,7 @@ const SecondPage = () => (
         <script src={withPrefix('script.js')} type="text/javascript" />
     </Helmet>
     <Seo title="Bible Reading" />
+    <div className={`general`}>
     <div class="sub-head-container">
       <div class="sub-head">
         <div class="sub-logo-cont">
@@ -332,7 +333,7 @@ const SecondPage = () => (
     <Link to="/bible-reading-2021/"><Button variant="primary">
    2021 Family Bible Reading</Button></Link>
 </div>
-   
+   </div>
 </Layout>
 )
 

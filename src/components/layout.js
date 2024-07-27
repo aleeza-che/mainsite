@@ -35,17 +35,10 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-      <div
-        style={{
-          margin: `0 auto 600px auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
+      
         <Container>
         <main>{children}</main>
         </Container>
-      </div>
 
     <Navbar className="justify-content-center bg-body-theme-footer flex-column" expand="lg">
 

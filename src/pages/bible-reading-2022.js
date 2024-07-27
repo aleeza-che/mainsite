@@ -7,6 +7,8 @@ import SpecialDetailsSummary from "../components/special-details-summary"
 
 const SecondPage = () => (
   <Layout>
+        <div className={`general`}>
+
     <Seo title="Bible Reading" />
      <h2>2022 Family Bible Reading Archive</h2>
     <hr/>
@@ -516,6 +518,7 @@ const SecondPage = () => (
   <Link to="/bible-reading-2022/">2022 Family Bible Reading</Link><br/>
     <Link to="/bible-reading-2021/">2021 Family Bible Reading</Link>
   </p>
+  </div>
 </Layout>
 )
 

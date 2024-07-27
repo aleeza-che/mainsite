@@ -224,6 +224,12 @@ pre tt:after {
 a {
   color: inherit;
 }
+
+.general {
+  margin: 200px auto 600px auto;
+  maxWidth: `var(--size-content);
+  padding: var(--size-gutter)
+}
 .bg-body-theme {
   background-color: var(--color-background);
   border-bottom: 1px solid var(--theme-ui-colors-border);
@@ -328,7 +334,7 @@ color: var(--theme-ui-colors-highlight);
         display: block !important;
       }
 
-
+.
 .navbar-brand{
 background: var(--theme-ui-colors-base);
   padding: 10px 20px;
@@ -416,3 +422,4 @@ color: inherit;
   border-color: var(--theme-ui-colors-highlight);
   color: white;
 }
+

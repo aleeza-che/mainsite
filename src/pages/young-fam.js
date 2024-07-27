@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 
 const SecondPage = () => (
   <Layout>
+            <div className={`general`}>
     <Helmet>
         <meta name="og:image" content={withPrefix('images/yf.png')} data-react-helmet="true"></meta>
     </Helmet>
@@ -233,7 +234,7 @@ const SecondPage = () => (
 
 
     </div>
-    
+    </div>
 </Layout>
 )
 

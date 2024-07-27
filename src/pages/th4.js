@@ -11,6 +11,7 @@ const SecondPage = () => (
     <Helmet>
         <script src={withPrefix('script.js')} type="text/javascript" />
     </Helmet>
+    <div className={`general`}>
     <Seo title="Team Hunger 4orce" />
     <div class="th4">
       <div class="sub-head">
@@ -63,6 +64,7 @@ const SecondPage = () => (
         </div>
      </details>
     </div>
+</div>
 </Layout>
 )
 
