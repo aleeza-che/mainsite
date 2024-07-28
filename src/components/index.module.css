@@ -46,6 +46,7 @@
 
 .textCenter {
   text-align: center;
+  margin-top: var(--size-gap);
 }
 
 .intro {

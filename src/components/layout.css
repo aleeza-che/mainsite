@@ -35,6 +35,7 @@
   --size-content: 77rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+  --size-footer-gap: 100px;
 
 }
 html {
@@ -226,7 +227,7 @@ a {
 }
 
 .general {
-  margin: 200px auto 600px auto;
+  margin: var(--space-4) auto var(--size-footer-gap) auto;
   maxWidth: `var(--size-content);
   padding: var(--size-gutter)
 }
@@ -334,7 +335,6 @@ color: var(--theme-ui-colors-highlight);
         display: block !important;
       }
 
-.
 .navbar-brand{
 background: var(--theme-ui-colors-base);
   padding: 10px 20px;
