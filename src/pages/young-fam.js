@@ -51,6 +51,73 @@ const SecondPage = () => (
 
     <Accordion>
 <Accordion.Item>
+        <Accordion.Header>Thursday, August 8, 2024 - Genesis 46-48</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+46-48&version=NLT;WEB;CJB" target="_blank">Genesis 46-48</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2049&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 49</Link> 
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+<Accordion>
+<Accordion.Item eventKey="0">
+        <Accordion.Header>Thursday, August 1, 2024 - Genesis 42-44</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+42-44&version=NLT;WEB;CJB" target="_blank">Genesis 42-44</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2045&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 45</Link>
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+<Accordion>
+<Accordion.Item eventKey="0">
+        <Accordion.Header>Thursday, July 25, 2024 - Genesis 38-40</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+38-40&version=NLT;WEB;CJB" target="_blank">Genesis 38-40</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2041&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 41</Link> 
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+<Accordion>
+<Accordion.Item eventKey="0">
+        <Accordion.Header>Thursday, July 18, 2024 - Genesis 34-36 reread</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+34-36&version=NLT;WEB;CJB" target="_blank">Genesis 34-36</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2037&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 37</Link> 
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+<Accordion>
+<Accordion.Item eventKey="0">
+        <Accordion.Header>Thursday, July 11, 2024 - Genesis 34-36</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+34-36&version=NLT;WEB;CJB" target="_blank">Genesis 34-36</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2037&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 37</Link> 
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+    <Accordion>
+    <Accordion.Item eventKey="0">
+        <Accordion.Header>Thursday, July 4, 2024 - Genesis 30-32</Accordion.Header>
+         <Accordion.Body>
+
+         <Link to="https://www.biblegateway.com/passage/?search=Genesis+30-32&version=NLT;WEB;CJB" target="_blank">Genesis 30-32</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=Genesis%2033&version=NLT;WEB;CJB" target="_blank">Read Together Genesis 33</Link> 
+         </Accordion.Body>
+      </Accordion.Item>
+</Accordion> 
+
+
+    <Accordion>
+    <Accordion.Item eventKey="0">
         <Accordion.Header>Thursday, June 27, 2024 - Genesis 26-28</Accordion.Header>
          <Accordion.Body>
 

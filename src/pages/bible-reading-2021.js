@@ -4,19 +4,22 @@ import { Link } from "gatsby"
 import Seo from "../components/seo"
 import DetailsSummary from "../components/details-summary"
 import SpecialDetailsSummary from "../components/special-details-summary"
+import Button from 'react-bootstrap/Button';
 
 const SecondPage = () => (
   <Layout>
             <div className={`general`}>
+            <div class="sub-head-container">
 
-    <Seo title="Bible Reading" />
+    <Seo title="2021 Bible Reading" />
     <h2>2021 Family Bible Reading Archive</h2>
+    <p>This is <strong>not</strong> the current bible reading schedule. Please use the button below to access the most current readings.</p>
+
     <hr/>
     
-    <p>
-      <Link to="/bible-reading/">Current Family Bible Reading</Link>
-    </p>
-
+    <Link to="/bible-reading/"><Button variant="primary">
+   Current Family Bible Reading</Button></Link>
+</div>
 
       <details>
         <summary>
@@ -540,15 +543,16 @@ const SecondPage = () => (
 
         </div>
       </details>
-      <p>
-      <Link to="/bible-reading/">Current Family Bible Reading</Link>
-    </p>
-  <p>
-  
-    <Link to="/bible-reading-2023/">2023 Family Bible Reading</Link><br/>
-    <Link to="/bible-reading-2022/">2022 Family Bible Reading</Link><br/>
-      <Link to="/bible-reading-2021/">2021 Family Bible Reading</Link>
-    </p>
+      <Link to="/bible-reading/"><Button variant="primary">
+   Current Family Bible Reading</Button></Link>
+   <div style={{ marginTop: `20px` }}>
+<Link to="/bible-reading-2023/"><Button variant="primary">
+   2023 Family Bible Reading</Button></Link>
+     <Link to="/bible-reading-2022/"><Button variant="primary">
+   2022 Family Bible Reading</Button></Link>
+    <Link to="/bible-reading-2021/"><Button variant="primary">
+   2021 Family Bible Reading</Button></Link>
+</div>
     </div>
 </Layout>
 )
