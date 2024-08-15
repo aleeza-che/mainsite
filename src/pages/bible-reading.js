@@ -41,6 +41,19 @@ const SecondPage = () => (
 
       <div class="summaries">
       <Accordion>
+                <Accordion.Item>
+                  <Accordion.Header>
+                  Saturday, August 17, 2024 - Isaiah 47-48, 2 Kings 18(9-37) / 2 Kings 19                 </Accordion.Header>
+
+                  <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah+47-48%2C+2+Kings+18%3A9-37&version=NLT;WEB;CJB" target="_blank">Isaiah 47-48, 2 Kings 18(9-37)</Link><br/>
+          <Link to="https://www.biblegateway.com/passage/?search=2+Kings+19&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 19</Link>
+        
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+     
+      <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
                   Saturday, August 10, 2024 - Isaiah 43-45 / Isaiah 46                 </Accordion.Header>

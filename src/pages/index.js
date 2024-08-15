@@ -13,7 +13,7 @@ import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
-    <div className={`general`}>
+    <div className={`general index`}>
     <div className={`index ${styles.textCenter}`}>
     <Stack gap={4}>
 

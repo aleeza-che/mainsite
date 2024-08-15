@@ -228,7 +228,7 @@ a {
 .general {
   margin: var(--space-4) auto var(--size-footer-gap) auto;
   maxWidth: `var(--size-content);
-  padding: var(--size-gutter)
+  padding: var(--space-1);
 }
 .bg-body-theme {
   background-color: var(--color-background);
@@ -564,7 +564,6 @@ details {
 /* extra styles */
 
 * {box-sizing: border-box;}
-body {font-family: system-ui, sans-serif; margin: 20px; background: #fff9f1;}
 article > *:first-child {margin: 0;}
 article > * + * {margin: 0.75em 0 0 0;}
 pre {color: white; background: #443c35; padding: 1em; border-radius: 5px;}
@@ -574,6 +573,11 @@ details code {font-size: 1.1em;}
 .tribe-button-nav {
 display: flex; justify-content: space-between; max-width: 310px;}
 
+.tkc {
+min-height: 80vw;
+  padding-top: 5vw;
+}
+
 @media (max-width: 452px) {
 .sub-head,.tribe-button-nav {
   flex-direction: column;
@@ -581,6 +585,49 @@ display: flex; justify-content: space-between; max-width: 310px;}
   .tribe-button-nav button {
 margin-bottom: 10px;
   }
+  
 }
 
+@media (max-width: 769px) {
 
+.sub-head-container{
+  padding-top: 6vw;
+  }
+  
+  .general {
+  padding-top: 13vw;
+  }
+  
+  .index {
+  margin-top: 20px !important;
+  }
+  
+}
+@media (max-width: 1100px) {
+
+.justify-content-center.bg-body-theme-footer.pb-5.pt-5.navbar-nav {
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 1200px) and (min-width:769px) {
+.index .flex-row.card.border-dark {
+  display: block;
+}
+ .index .card-body {
+  text-align: center;
+}
+  .index .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
+  margin: 12px !important;
+  max-width: 112px !important;
+  align-self: center;
+}
+  
+ .index .flex-row.card.border-dark {
+  flex-direction: column !important;
+  align-content: center !important;
+  justify-content: center !important;
+  margin: 0 auto;
+       display: flex;
+}
+}
