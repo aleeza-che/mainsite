@@ -38,10 +38,7 @@ const SecondPage = () => (
             </p>
           </div>
         </div>
-        <div style={{
-          display: `flex`,
-          justifyContent:`space-between`,
-          width:`310px`}}><ModalYFOverview />
+        <div className="tribe-button-nav"><ModalYFOverview />
         <ModalYFTips/></div>
 
       </div>

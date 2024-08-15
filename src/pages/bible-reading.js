@@ -36,7 +36,7 @@ const SecondPage = () => (
             </p>
           </div>
         </div>
-        <ModalButtons />
+        <div className="tribe-button-nav"><ModalButtons /></div>
       </div>
 
       <div class="summaries">

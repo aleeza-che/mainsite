@@ -388,10 +388,11 @@ color: inherit;
 }
 
 
-.sub-head{
+.sub-head {
   background: #fff;
-  padding: 0 130px 50px 130px;
   display: flex;
+  max-width: 700px;
+  margin: 0 auto 5vw;
 }
 
 .sub-logo-cont{
@@ -570,5 +571,16 @@ pre {color: white; background: #443c35; padding: 1em; border-radius: 5px;}
 article {padding: 10px; margin: 0;}
 details code {font-size: 1.1em;}
 
+.tribe-button-nav {
+display: flex; justify-content: space-between; max-width: 310px;}
+
+@media (max-width: 452px) {
+.sub-head,.tribe-button-nav {
+  flex-direction: column;
+}
+  .tribe-button-nav button {
+margin-bottom: 10px;
+  }
+}
 
 
