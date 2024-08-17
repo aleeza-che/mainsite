@@ -44,18 +44,30 @@ const SecondPage = () => (
       </div>
 
 
-    <div class="summaries">
+<div class="summaries">
+<Accordion>
+            <Accordion.Item>
+                  <Accordion.Header>
+                        Thursday, August 22, 2024 - Exodus 4-6
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%204-6&version=NLT;WEB;CJB" target="_blank">Exodus 4-6</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%207&version=NLT;WEB;CJB" target="_blank">Read Together Exodus 7</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
 
-    <Accordion>
-<Accordion.Item>
-        <Accordion.Header>Thursday, August 15, 2024 - Genesis 50, Exodus 1-2</Accordion.Header>
-         <Accordion.Body>
-
-         <Link to="https://www.biblegateway.com/passage/?search=Genesis+50%2C+Exodus+1-2&version=NLT;WEB;CJB" target="_blank">Genesis 50, Exodus 1-2</Link><br/>
-          <Link to="https://www.biblegateway.com/passage/?search=Exodus%203&version=NLT;WEB;CJB" target="_blank">Read Together Exodus 3</Link> 
-         </Accordion.Body>
-      </Accordion.Item>
-</Accordion> 
+      <Accordion>
+            <Accordion.Item>
+                  <Accordion.Header eventKey="0">
+                        Thursday, August 15, 2024 - Genesis 50, Exodus 1-2
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Genesis+50%2C+Exodus+1-2&version=NLT;WEB;CJB" target="_blank">Genesis 50, Exodus 1-2</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%203&version=NLT;WEB;CJB" target="_blank">Read Together Exodus 3</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
 
 <Accordion>
 <Accordion.Item eventKey="0">
