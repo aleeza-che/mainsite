@@ -41,27 +41,40 @@ const SecondPage = () => (
 
       <div class="summaries">
       <Accordion>
-                <Accordion.Item>
-                  <Accordion.Header>
-                  Saturday, August 17, 2024 - Isaiah 47-48, 2 Kings 18(9-37) / 2 Kings 19                 </Accordion.Header>
-
-                  <Accordion.Body>
-                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah+47-48%2C+2+Kings+18%3A9-37&version=NLT;WEB;CJB" target="_blank">Isaiah 47-48, 2 Kings 18(9-37)</Link><br/>
-          <Link to="https://www.biblegateway.com/passage/?search=2+Kings+19&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 19</Link>
-        
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+            <Accordion.Item>
+                <Accordion.Header>
+                  Saturday, August 24, 2024 - Psalm 46, 80, 135 / Isaiah 49
+                </Accordion.Header>
+              
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2046%2C%2080%2C%20135&version=NLT;WEB;CJB" target="_blank">Psalm 46, 80, 135</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2049&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 49</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+     
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  Saturday, August 17, 2024 - Isaiah 47-48, 2 Kings 18(9-37) / 2 Kings 19
+                </Accordion.Header>
+              
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah+47-48%2C+2+Kings+18%3A9-37&version=NLT;WEB;CJB" target="_blank">Isaiah 47-48, 2   Kings 18(9-37)</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2+Kings+19&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 19</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
      
       <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                  Saturday, August 10, 2024 - Isaiah 43-45 / Isaiah 46                 </Accordion.Header>
+                  Saturday, August 10, 2024 - Isaiah 43-45 / Isaiah 46
+                  </Accordion.Header>
 
                   <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah+43-45&version=NLT;WEB;CJB" target="_blank">Isaiah 43-45</Link><br/>
           <Link to="https://www.biblegateway.com/passage/?search=Isaiah+46&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 46</Link>
-        
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
@@ -70,14 +83,12 @@ const SecondPage = () => (
       <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                  Saturday, August 3, 2024 - Psalm 76, Isaiah 40-41 / Isaiah 42                  </Accordion.Header>
+                  Saturday, August 3, 2024 - Psalm 76, Isaiah 40-41 / Isaiah 42
+                  </Accordion.Header>
 
-                  <Accordion.Body>
-                  
+                  <Accordion.Body>  
           <Link to="https://www.biblegateway.com/passage/?search=Psalm+76%2C+Isaiah+40-41&version=NLT;WEB;CJB" target="_blank">Psalm 76, Isaiah 40-41</Link><br/>
           <Link to="https://www.biblegateway.com/passage/?search=Isaiah+42&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 42</Link>
-        
-        
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
