@@ -33,8 +33,7 @@ const SecondPage = () => (
             <p>
               <h2>Young Fam Thursday</h2>
               <h4>7:30pm EST</h4>
-              <strong>Purpose:</strong>
-              To nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.
+              <strong>Purpose:</strong> To nurture personal and collective spiritual growth by having open discussions about life springing from reading scriptures together.
             </p>
           </div>
         </div>
