@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, August 31, 2024 - Isaiah 50-52 / Isaiah 53
+                </Accordion.Header>
+              
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2050-52&version=NLT;WEB;CJB" target="_blank">Isaiah 50-52</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2053&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 53</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+     
+        <Accordion>
+        <Accordion.Item eventKey="0">
+        <Accordion.Header>
                   Saturday, August 24, 2024 - Psalm 46, 80, 135 / Isaiah 49
                 </Accordion.Header>
               
