@@ -47,6 +47,18 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, September 5, 2024 - Exodus 12-14
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2012-14&version=NLT;WEB;CJB" target="_blank">Exodus 12-14</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2015&version=NLT;WEB;CJB" target="_blank">Read Together Exodus 15</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, August 29, 2024 - Exodus 8-10
                   </Accordion.Header>
                   <Accordion.Body>
