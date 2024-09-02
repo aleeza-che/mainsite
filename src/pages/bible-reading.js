@@ -52,7 +52,10 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-     
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>August</Accordion.Header>
+            <Accordion.Body>
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
@@ -118,6 +121,12 @@ const SecondPage = () => (
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
+
+
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
 
         <Accordion>
           <Accordion.Item eventKey="0">
