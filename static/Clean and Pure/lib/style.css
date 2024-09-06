@@ -1,0 +1,152 @@
+@font-face {
+   font-family: 'geomanist';
+   src: url('../lib/fonts/geomanist-regular-webfont.eot');
+   src: url('../lib/fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/geomanist-regular-webfont.woff2') format('woff2'), url('../lib/fonts/geomanist-regular-webfont.woff') format('woff'), url('../lib/fonts/geomanist-regular-webfont.ttf') format('truetype'), url('../lib/fonts/geomanist-regular-webfont.svg#geomanistregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+body,
+body a,
+.markdown-preview-view {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+   font-size: 14px !important;
+}
+
+.canvas-node {
+   text-align: center;
+}
+
+.sidebar-section-header {
+   margin-right: 5px;
+}
+
+.collapse-tree-button svg {
+   margin: 0 auto;
+}
+
+.canvas-group-label,
+#group-collapse-button {
+   display: none;
+}
+
+sup {
+   display: none;
+}
+
+.markdown-rendered p {
+   margin-bottom: 0;
+   margin-top: 0;
+}
+
+.markdown-rendered p:nth-child(2n) {
+   display: none;
+}
+
+details {
+   background: #eeeeee00;
+   display: inline-block;
+   margin: 0 2px;
+   font-size: 13px;
+}
+
+summary {
+   padding: 0 7px;
+   font-size: 13px;
+}
+
+details span {
+   display: inline-block;
+   padding: 4px 2px;
+   background-color: #eee;
+   border-radius: 2px;
+}
+
+mark {
+   border-radius: 2px;
+   padding: 0 4px 1px 4px;
+   font-size: 14px;
+   line-height: 1rem;
+   display: inline-block;
+}
+
+.canvas-node-content.markdown-embed>.markdown-embed-content>.markdown-preview-view {
+   padding: 0;
+}
+
+.theme-dark,
+.theme-dark div.markdown-preview-view {
+   color: #eee !important;
+}
+
+.theme-dark details span {
+   background-color: #6d6c6d;
+}
+
+span.scripture-title,
+div.reading-column-1-symbol,
+div.asterik-passive,
+span.reading-column-1-symbol {
+   font-family: "Brandon_med", Gill Sans MT, Gill Sans, sans-serif !important;
+}
+
+div.symbol-box {
+   font-family: Brandon_reg, Gill Sans MT, Gill Sans, sans-serif !important;
+   font-size: 11pt;
+}
+
+div.asterik-passive {
+   font-size: 10pt;
+   text-align-last: left;
+}
+
+div.header-scripture-tag a {
+   color: #2f2e2e;
+}
+
+span.reading-column-section-verse {
+   color: #555158;
+   font-weight: 600;
+}
+
+div.reading-column-section {
+   font-size: 11pt;
+}
+
+td[style="line-height:10px;"] {
+   line-height: 16px !important;
+}
+
+div.markdown-rendered th {
+   font-weight: 400 !important;
+   font-family: var(--table-header-font);
+}
+
+div.markdown-rendered td {
+   font-size: 10pt;
+}
+
+h3.heading {
+   font-style: oblique !important;
+}
+
+div.reading-column-chapter-reference {
+   position: absolute;
+   left: -22px;
+   top: -25px;
+   color: #c0bfbf;
+   font-weight: 400;
+   font-size: 18.4pt;
+}
+
+.heading-wrapper h2.heading {
+   margin: 0 !important;
+}
+
+span.sidebar-section-header {
+   margin-right: 10px;
+}
