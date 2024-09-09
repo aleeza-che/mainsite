@@ -274,7 +274,6 @@ h2.heading {
 }
 
 .reading-column-section {
-  font-family: Brandon_reg, "Gill Sans MT",  "Gill Sans" !important;
   text-align: justify;
   text-align-last:left;
   position: relative;
@@ -305,7 +304,6 @@ h2.heading {
   }
 
 .reading-column-1-symbol {
-  font-family: Brandon_reg, "Gill Sans MT",  "Gill Sans" !important;
   text-align: center;
   font-size: 11pt;
   margin: 20px 0 50px 0;
@@ -332,16 +330,20 @@ h2.heading {
   height: 75px;
   margin: 0
 }
+.spacer-45 {
+  height: 45px;
+  margin: 0
+}
 
+.spacer-25 {
+  height: 25px;
+  margin: 0
+}
 .sub-sub-heading {
   font-size: 18pt;
   margin:0 0 15px 0;
   font-style: italic;
   font-weight:400;
-}
-
-.collapse {
-  margin-bottom: 0;
 }
 
 .my-tooltip {
@@ -360,14 +362,13 @@ h2.heading {
   position: absolute;
   font-size: 10px;
   font-weight: 600;
-  right: -15px;
+  right: -7px;
   color: #fff;
-  height: 13px;
-  width: 13px;
+  height: 11px;
+  width: 11px;
   justify-content: center;
   align-items: end;
-  top: 0;
-  margin-right:10px;
+  top: -3px;
 }
 
 .my-tooltip .my-tooltiptext {
@@ -409,12 +410,15 @@ h2.heading {
   display: block;
 }
 
+.collapse {
+  margin-bottom: 0;
+}
+
 h6.heading {
   margin-bottom: 0;
 }
 
 .question-scripture-ref {
-    font-family: Brandon_reg, "Gill Sans MT",  "Gill Sans" !important;
   border:1px solid #dedede;
   font-size:16px;
   font-weight:400;
