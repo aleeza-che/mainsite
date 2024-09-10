@@ -29,6 +29,7 @@ h6.heading {
   margin-right: 5px;
 }
 /*exported only--->*/
+
 ul li {
   margin-bottom: 20px;
   color: #000;
@@ -56,7 +57,6 @@ i {
 }
 
 .cap-callout {
-  font-size: 18px;
   padding: 32px;
   background: #e3f2ff;
   color: #505050;
@@ -531,15 +531,17 @@ blockquote::after {
   content: '”';
   font-size: 50px;
   position: absolute;
-  right: 0;
+  right: -26px;
     color: #cccccc;
   bottom: -30px;
 }
+
 blockquote {
   margin: 25px 30px 10px 30px !important;
   color: #777;
   position: relative;
   max-width: 370px;
+  border-inline-start: none;
 }
 
 .collapse {
@@ -601,3 +603,20 @@ sup {
 .canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
   padding: 0;
  }
+
+.align-left {
+text-align: left;
+  margin-left: 15px;
+}
+
+.definition-term, .definition-title {
+font-weight: 600;
+}
+
+.definition-definition,.definition-synonyms {
+margin-bottom: 10px;
+}
+
+.line-height-fix {
+line-height: 19px;
+}
