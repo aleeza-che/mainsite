@@ -536,7 +536,7 @@ blockquote::after {
   bottom: -30px;
 }
 
-blockquote {
+blockquote, .markdown-rendered blockquote {
   margin: 25px 30px 10px 30px !important;
   color: #777;
   position: relative;
@@ -559,10 +559,6 @@ blockquote {
 .canvas-group-label,#group-collapse-button {
   display: none;
   }
-
-sup {
-	display:none;
-	}
 			 
 .canvas .markdown-rendered p {
   margin-bottom: 0;
