@@ -7,7 +7,6 @@ import Seo from "../components/seo"
 import ModalYFOverview from "../components/modal-yf-overview"
 import ModalYFTips from "../components/modal-yf-tips"
 import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
 
 
 const SecondPage = () => (
@@ -46,6 +45,18 @@ const SecondPage = () => (
 <div class="summaries">
 <Accordion>
             <Accordion.Item>
+                  <Accordion.Header>
+                        Thursday, September 12, 2024 - Exodus 15-17
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2016-18&version=NLT;WEB;CJB" target="_blank">Exodus 16-18</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2019&version=NLT;WEB;CJB" target="_blank">Read Together Exodus 19</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, September 5, 2024 - Exodus 12-14
                   </Accordion.Header>
