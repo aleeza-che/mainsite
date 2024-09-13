@@ -616,3 +616,32 @@ margin-bottom: 10px;
 .line-height-fix {
 line-height: 19px;
 }
+
+.tree-item mark {
+  background: none !important;
+  color: #686868;
+}
+
+.tree-item div[heading-name="Being under obligation to the flesh makes us [[Live according to]] the flesh."] {
+  height: 23px !important;
+}
+
+
+.tree-item div[heading-name='A [[principle]] (<mark style="background: #FF5582A6;">The law of sin</mark>) is discovered'] {
+display: inline !important;
+  width: 501px;
+}
+
+
+.tree-item div[heading-name="Being under obligation to the flesh makes us [[Live according to]] the flesh."] a,
+.tree-item div[heading-name='A [[principle]] (<mark style="background: #FF5582A6;">The law of sin</mark>) is discovered'] a {
+margin-left:0;
+}
+
+.tree-container .tree-item:nth-child(n+11) a {
+display:unset;
+}
+
+.tree-container .tree-item:nth-child(n+11) div a {
+  margin-right: 3px;
+}
