@@ -630,212 +630,210 @@ line-height: 19px;
   display: flex;
   flex-direction: column;
 }
-/* 16. The law proved to result in death*/
-.tree-container .tree-item:nth-child(n) {
-order:16;
+
+/* 00. Sin is dead*/
+.tree-item-children .tree-item:nth-child(42) {
+order:0;
 }
 
-/* 17. When a person dies it reveals sin to be sin*/
-.tree-container .tree-item:nth-child(n+1) {
-order:17;
+/* 02. A person is made of flesh*/
+.tree-item-children .tree-item:nth-child(41) {
+order:1;
 }
 
-/* 21. The law of sin makes a believer a prisoner to the law of sin.*/
-.tree-container .tree-item:nth-child(n+2) {
-order:21;
-}
-
-/* 22. A person is in bondage to sin*/
-.tree-container .tree-item:nth-child(n+3) {
-order:22;
-}
-
-
-/* 18. The commandment makes sin utterly sinful.*/
-.tree-container .tree-item:nth-child(n+4) {
-order:18;
-}
-
-/* 19. A principle ( The law of sin ) is discovered*/
-.tree-container .tree-item:nth-child(n+5) {
-order:19;
-}
-
-/* 20. The law of sin dwells in the body parts.*/
-.tree-container .tree-item:nth-child(n+6) {
-order:20;
-}
-
-/* 23. Being under obligation to the flesh makes us Live according to the flesh.*/
-.tree-container .tree-item:nth-child(n+7) {
-order: 23;
-}
-
-/* 24. The believer desires to do what is right*/
-.tree-container .tree-item:nth-child(n+8) {
-order: 24;
-}
-
-/* 25. A believer wants to do right.*/
-.tree-container .tree-item:nth-child(n+9) {
-order:25;
-}
-
-/* 26. When a believer does not want to sin a believer agrees with the Law*/
-.tree-container .tree-item:nth-child(n+10) {
-order:26;
-}
-
-/* 27. A believer who does not want to sin believes that The law is good.*/
-.tree-container .tree-item:nth-child(n+11) {
-order:27;
-}
-
-/* 28. Evil is present in the one who wants to do good*/
-.tree-container .tree-item:nth-child(n+12) {
-order:28;
-}
-
-/* 29. A believer's "inner person" is what agrees with God's law*/
-.tree-container .tree-item:nth-child(n+13) {
-order: 29;
-}
-
-/* 30. The law of sin wages war against a believer's mind.*/
-.tree-container .tree-item:nth-child(n+14) {
-order:30;
-}
-
-/* 31. A believer hates wrong/sin.*/
-.tree-container .tree-item:nth-child(n+15) {
-order:31;
-}
-
-/* 32. A believer practices the evil he/she does not want to do*/
-.tree-container .tree-item:nth-child(n+16) {
-order:32
-}
-
-/* 33. If the believer doesn't want to sin, it is sin dwelling in the believer that performs the sin.*/
-.tree-container .tree-item:nth-child(n+17) {
-order:33;
-}
-
-/* 34. The un-good thing are found within the flesh of the unbeliever*/
-.tree-container .tree-item:nth-child(n+18) {
-order:34;
-}
-
-/* 35. A believer does not have the ability to do good in the flesh.*/
-.tree-container .tree-item:nth-child(n+19) {
-order:35;
-}
-
-/* 36. "The good" a believer wants to do he/she does not do*/
-.tree-container .tree-item:nth-child(n+20) {
-order:36;
-}
-
-/* 37. When a believer does not want to sin, it is sin that dwells in them that causes a believer to do wrong*/
-.tree-container .tree-item:nth-child(n+21) {
-order:37;
-}
-
-/* 38. A believer does what a believer hates.*/
-.tree-container .tree-item:nth-child(n+22) {
-order:38;
-}
-
-/* 39. A believer does not understand their own actions**/
-.tree-container .tree-item:nth-child(n+23) {
-order:39;
-}
-
-/* 40. The Law was not able to bring life.*/
-.tree-container .tree-item:nth-child(n+24) {
-order: 40;
-}
-
-/* 15. The body is dead because of sin**/
-.tree-container .tree-item:nth-child(n+25) {
-order: 15;
-}
-
-/* 13. The person died (spiritually)*/
-.tree-container .tree-item:nth-child(n+26) {
-}
-
-/* 14. Sin came to life*/
-.tree-container .tree-item:nth-child(n+27) {
-order:15;
-}
-
-/* 12. Sin killed the person**/
-.tree-container .tree-item:nth-child(n+29) {
-order:14;
-}
-
-/* 13. The person died (spiritually)*/
-.tree-container .tree-item:nth-child(n+28) {
-order:13;
-}
-
-/* 08. The law makes sin known*/
-.tree-container .tree-item:nth-child(n+31) {
-order:12;
-}
-
-/* 11. Sin causes death for a person*/
-.tree-container .tree-item:nth-child(n+30) {
-order:11;
-}
-
-/* 10. Sin uses the commandment to produce sin in a person.*/
-.tree-container .tree-item:nth-child(n+32) {
-order:10;
-}
-
-/* 09. Sin uses the commandment to deceive a person*/
-.tree-container .tree-item:nth-child(n+34) {
-order:9;
-}
-
-/* 07. The law promised to bring life**/
-.tree-container .tree-item:nth-child(n+33) {
-order:8;
-}
-
-/* 05. The law is spiritual*/
-.tree-container .tree-item:nth-child(n+35) {
-order:7;
-}
-
-/* 04. The commandments of the law are righteous and good*/
-.tree-container .tree-item:nth-child(n+36) {
-order:4;
+/* 01. A person is alive spiritually*/
+.tree-item-children .tree-item:nth-child(40) {
+order:2;
 }
 
 /* 03. The commandment was given*/
-.tree-container .tree-item:nth-child(n+37) {
+.tree-item-children .tree-item:nth-child(39) {
+order:3;
+}
+
+/* 04. The commandments of the law are righteous and good*/
+.tree-item-children .tree-item:nth-child(36) {
+order:4;
+}
+
+/* 05. The law is spiritual*/
+.tree-item-children .tree-item:nth-child(37) {
 order:5;
 }
 
 /* 06. The law and it's commandments are holy*/
-.tree-container .tree-item:nth-child(n+38) {
+.tree-item-children .tree-item:nth-child(38) {
 order:6;
 }
 
-/* 02. A person is made of flesh*/
-.tree-container .tree-item:nth-child(n+39) {
-order:2;
+/*The law promised to bring life*/
+.tree-item-children .tree-item:nth-child(35) {
+order:7;
 }
 
-/* 01. A person is alive spiritually*/
-.tree-container .tree-item:nth-child(n+40) {
-order:1;
+/* 08. The law makes sin known*/
+.tree-item-children .tree-item:nth-child(33) {
+order:8;
 }
 
-/* 00. Sin is dead*/
-.tree-container .tree-item:nth-child(n+41) {
-order:0;
+/* 09. Sin uses the commandment to deceive a person*/
+.tree-item-children .tree-item:nth-child(34) {
+order:9;
 }
+
+/* 10. Sin uses the commandment to produce sin in a person.*/
+.tree-item-children .tree-item:nth-child(32) {
+order:10;
+}
+
+/* 11. Sin causes death for a person*/
+.tree-item-children .tree-item:nth-child(30) {
+order:11;
+}
+
+/* 12. Sin killed the person**/
+.tree-item-children .tree-item:nth-child(31) {
+order:12;
+}
+
+/* 13. The person died (spiritually)*/
+.tree-item-children .tree-item:nth-child(28) {
+order:13;
+}
+
+/* 14. Sin came to life*/
+.tree-item-children .tree-item:nth-child(29) {
+order:14;
+}
+
+/* 15. The body is dead because of sin*/
+.tree-item-children .tree-item:nth-child(27) {
+order: 15;
+}
+
+/* 16. The law proved to result in death*/
+.tree-item-children .tree-item:nth-child(2) {
+order:16;
+}
+
+/* 17. When a person dies it reveals sin to be sin*/
+.tree-item-children .tree-item:nth-child(3) {
+order:17;
+}
+
+/* 18. The commandment makes sin utterly sinful.*/
+.tree-item-children .tree-item:nth-child(6) {
+order:18;
+}
+
+/* 19. A principle ( The law of sin ) is discovered*/
+.tree-item-children .tree-item:nth-child(7) {
+order:19;
+}
+
+/* 20. The law of sin dwells in the body parts.*/
+.tree-item-children .tree-item:nth-child(8) {
+order:20;
+}
+
+/* 21. The law of sin makes a believer a prisoner to the law of sin.*/
+.tree-item-children .tree-item:nth-child(4) {
+order:21;
+}
+
+/* 22. A person is in bondage to sin*/
+.tree-item-children .tree-item:nth-child(5) {
+order:22;
+}
+
+/* 23. Being under obligation to the flesh makes us Live according to the flesh.*/
+.tree-item-children .tree-item:nth-child(9) {
+order: 23;
+}
+
+/* 24. The believer desires to do what is right*/
+.tree-item-children .tree-item:nth-child(10) {
+order: 24;
+}
+
+/* 25. A believer wants to do right.*/
+.tree-item-children .tree-item:nth-child(11) {
+order:25;
+}
+
+/* 26. When a believer does not want to sin a believer agrees with the Law*/
+.tree-item-children .tree-item:nth-child(12) {
+order:26;
+}
+
+/* 27. A believer who does not want to sin believes that The law is good.*/
+.tree-item-children .tree-item:nth-child(13) {
+order:27;
+}
+
+/* 28. Evil is present in the one who wants to do good*/
+.tree-item-children .tree-item:nth-child(14) {
+order:28;
+}
+
+/* 29. A believer's "inner person" is what agrees with God's law*/
+.tree-item-children .tree-item:nth-child(15) {
+order: 29;
+}
+
+/* 30. The law of sin wages war against a believer's mind.*/
+.tree-item-children .tree-item:nth-child(16) {
+order:30;
+}
+
+/* 31. A believer hates wrong/sin.*/
+.tree-item-children .tree-item:nth-child(17) {
+order:31;
+}
+
+/* 32. A believer practices the evil he/she does not want to do*/
+.tree-item-children .tree-item:nth-child(18) {
+order:32
+}
+
+/* 33. If the believer doesn't want to sin, it is sin dwelling in the believer that performs the sin.*/
+.tree-item-children .tree-item:nth-child(19) {
+order:33;
+}
+
+/* 34. The un-good thing are found within the flesh of the unbeliever*/
+.tree-item-children .tree-item:nth-child(20) {
+order:34;
+}
+
+/* 35. A believer does not have the ability to do good in the flesh.*/
+.tree-item-children .tree-item:nth-child(21) {
+order:35;
+}
+
+/* 36. "The good" a believer wants to do he/she does not do*/
+.tree-item-children .tree-item:nth-child(22) {
+order:36;
+}
+
+/* 37. When a believer does not want to sin, it is sin that dwells in them that causes a believer to do wrong*/
+.tree-item-children .tree-item:nth-child(23) {
+order:37;
+}
+
+/* 38. A believer does what a believer hates.*/
+.tree-item-children .tree-item:nth-child(24) {
+order:38;
+}
+
+/* 39. A believer does not understand their own actions**/
+.tree-item-children .tree-item:nth-child(25) {
+order:39;
+}
+
+/* 40. The Law was not able to bring life.*/
+.tree-item-children .tree-item:nth-child(26) {
+order: 40;
+}
+
+
