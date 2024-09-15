@@ -440,6 +440,10 @@ font-size:calc(11px + .1vw);
   z-index: 1;
 }
 
+.my-tooltip .my-tooltiptext a{
+color:#fff;
+}
+
 .my-tooltip:hover .my-tooltiptext {
   visibility: visible;
 }
@@ -640,4 +644,17 @@ line-height: 19px;
 .c1-3nf38o > .tree-link > .nav-folder-title {
   visibility: hidden;
   height: 1px;
+}
+
+.tree-item-children.nav-folder-children.hidey {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidey .nav-file {
+order:0;
+}
+
+.hidey .nav-folder {
+order:1;
 }
