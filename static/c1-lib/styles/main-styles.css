@@ -536,7 +536,7 @@ blockquote::after {
   bottom: -30px;
 }
 
-blockquote {
+blockquote, .markdown-rendered blockquote {
   margin: 25px 30px 10px 30px !important;
   color: #777;
   position: relative;
@@ -559,10 +559,6 @@ blockquote {
 .canvas-group-label,#group-collapse-button {
   display: none;
   }
-
-sup {
-	display:none;
-	}
 			 
 .canvas .markdown-rendered p {
   margin-bottom: 0;
@@ -619,4 +615,29 @@ margin-bottom: 10px;
 
 .line-height-fix {
 line-height: 19px;
+}
+
+.tree-item mark {
+  background: none !important;
+  color: #686868;
+}
+
+.canvas h6 {
+  margin-top: 0;
+}
+
+.clickable-icon.collapse-tree-button.is-collapsed {
+  border: none;
+  background: none;
+}
+
+.clickable-icon.collapse-tree-button {
+  border: none;
+  background: none;
+}
+
+.c2-39hf47 > .tree-link > .nav-folder-title,
+.c1-3nf38o > .tree-link > .nav-folder-title {
+  visibility: hidden;
+  height: 1px;
 }
