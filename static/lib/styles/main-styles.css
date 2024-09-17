@@ -273,7 +273,7 @@ font-size:calc(11px + .1vw);
   text-decoration: inherit;
 }
 
-.sub-sub-heading {
+.sub-sub-heading, h3.sub-sub-heading {
   font-size: 18pt;
   margin:0 0 15px 0;
   font-style: italic;
@@ -553,7 +553,7 @@ blockquote, .markdown-rendered blockquote {
 }
 
 .collapse-all {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .document-container .canvas {
