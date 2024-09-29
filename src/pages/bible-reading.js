@@ -43,6 +43,24 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, October 5, 2024 - Isaiah 66, 2 Kings 20-21 / Nahum 1
+                </Accordion.Header>
+              
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2066%2C%202%20Kings%2020-21&version=NLT;WEB;CJB" target="_blank">Isaiah 66, 2 Kings 20-21</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Nahum%201&version=NLT;WEB;CJB" target="_blank">Read Together Nahum 1</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>September</Accordion.Header>
+            <Accordion.Body>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, September 28, 2024 - Isaiah 62-64 / Isaiah 65
                 </Accordion.Header>
               
@@ -92,10 +110,17 @@ const SecondPage = () => (
           </Accordion.Item>
         </Accordion>
         
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
+
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>August</Accordion.Header>
             <Accordion.Body>
+
+
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
