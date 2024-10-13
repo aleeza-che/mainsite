@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, October 19, 2024 - Zephaniah 1-3 / Jeremiah 1
+                </Accordion.Header>
+              
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Zephaniah%201-3&version=NLT;WEB;CJB" target="_blank">Zephaniah 1-3</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%201&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 1</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, October 12, 2024 - Nahum 2-3, 2 Kings 22 / 2 Kings 23
                 </Accordion.Header>
               
