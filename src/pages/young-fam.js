@@ -49,8 +49,8 @@ const SecondPage = () => (
                         Thursday, October 24, 2024 - Exodus 40, Leviticus 1-2
                   </Accordion.Header>
                   <Accordion.Body>
-                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2036-38&version=NLT;WEB;CJB" target="_blank">Exodus 40, Leviticus 1-2</Link><br/>
-                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2039&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 3</Link> 
+                        <Link to="https://www.biblegateway.com/passage/?search=Exodus%2040%2C%20Leviticus%201-2&version=NLT;WEB;CJB" target="_blank">Exodus 40, Leviticus 1-2</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%203&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 3</Link> 
                   </Accordion.Body>
             </Accordion.Item>
       </Accordion> 
