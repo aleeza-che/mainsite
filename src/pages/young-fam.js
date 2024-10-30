@@ -46,6 +46,18 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, October 31, 2024 - Leviticus 4-6
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%204-6&version=NLT;WEB;CJB" target="_blank">Leviticus 4-6</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%207&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 7</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, October 24, 2024 - Exodus 40, Leviticus 1-2
                   </Accordion.Header>
                   <Accordion.Body>
@@ -56,7 +68,7 @@ const SecondPage = () => (
       </Accordion> 
 
       <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, October 17, 2024 - Exodus 36-38
                   </Accordion.Header>
