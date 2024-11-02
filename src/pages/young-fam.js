@@ -46,6 +46,18 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, November 7, 2024 - Leviticus 8-10
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%208-10&version=NLT;WEB;CJB" target="_blank">Leviticus 8-10</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2011&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 11</Link> 
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion> 
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, October 31, 2024 - Leviticus 4-6
                   </Accordion.Header>
                   <Accordion.Body>
