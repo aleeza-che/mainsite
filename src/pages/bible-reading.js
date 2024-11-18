@@ -45,7 +45,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, November 23, 2024 - Jeremiah 18-20 / Jeremiah 21
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2018-20&version=NLT;WEB;CJB" target="_blank">Jeremiah 18-20</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2021&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 21</Link>
@@ -54,11 +54,11 @@ const SecondPage = () => (
         </Accordion>
 
         <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   Saturday, November 16, 2024 - Jeremiah 14-16 / Jeremiah 17
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2014-16&version=NLT;WEB;CJB" target="_blank">Jeremiah 14-16</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2017&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 17</Link>
@@ -71,7 +71,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, November 9, 2024 - Jeremiah 10-12 / Jeremiah 13
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2010-12&version=NLT;WEB;CJB" target="_blank">Jeremiah 10-12</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2013&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 13</Link>
@@ -84,7 +84,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, November 2, 2024 - Jeremiah 6-8 / Jeremiah 9
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%206-8&version=NLT;WEB;CJB" target="_blank">Jeremiah 6-8</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%209&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 9</Link>
@@ -97,7 +97,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, October 26, 2024 - Jeremiah 2-4 / Jeremiah 5
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%202-4&version=NLT;WEB;CJB" target="_blank">Jeremiah 2-4</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%205&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 5</Link>
@@ -110,7 +110,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, October 19, 2024 - Zephaniah 1-3 / Jeremiah 1
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Zephaniah%201-3&version=NLT;WEB;CJB" target="_blank">Zephaniah 1-3</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%201&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 1</Link>
@@ -123,7 +123,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, October 12, 2024 - Nahum 2-3, 2 Kings 22 / 2 Kings 23
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Nahum%202-3%2C%202%20Kings%2022&version=NLT;WEB;CJB" target="_blank">Nahum 2-3, 2 Kings 22</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2023&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 23</Link>
@@ -136,7 +136,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, October 5, 2024 - Isaiah 66, 2 Kings 20-21 / Nahum 1
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2066%2C%202%20Kings%2020-21&version=NLT;WEB;CJB" target="_blank">Isaiah 66, 2 Kings 20-21</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Nahum%201&version=NLT;WEB;CJB" target="_blank">Read Together Nahum 1</Link>
@@ -154,7 +154,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, September 28, 2024 - Isaiah 62-64 / Isaiah 65
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2062-64&version=NLT;WEB;CJB" target="_blank">Isaiah 62-64</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2065&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 65</Link>
@@ -167,7 +167,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, September 21, 2024 - Isaiah 58-60 / Isaiah 61
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2058-60&version=NLT;WEB;CJB" target="_blank">Isaiah 58-60</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2061&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 61</Link>
@@ -180,7 +180,7 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, September 14, 2024 - Isaiah 54-56 / Isaiah 57 (reread)
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2054-56&version=NLT;WEB;CJB" target="_blank">Isaiah 54-56</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2057&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 57</Link>
@@ -193,14 +193,14 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, September 7, 2024 - Isaiah 54-56 / Isaiah 57
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2054-56&version=NLT;WEB;CJB" target="_blank">Isaiah 54-56</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2057&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 57</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        
+
         </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -217,40 +217,40 @@ const SecondPage = () => (
                 <Accordion.Header>
                   Saturday, August 31, 2024 - Isaiah 50-52 / Isaiah 53
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2050-52&version=NLT;WEB;CJB" target="_blank">Isaiah 50-52</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2053&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 53</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-     
+
         <Accordion>
         <Accordion.Item eventKey="0">
         <Accordion.Header>
                   Saturday, August 24, 2024 - Psalm 46, 80, 135 / Isaiah 49
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%2046%2C%2080%2C%20135&version=NLT;WEB;CJB" target="_blank">Psalm 46, 80, 135</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah%2049&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 49</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-     
+
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   Saturday, August 17, 2024 - Isaiah 47-48, 2 Kings 18(9-37) / 2 Kings 19
                 </Accordion.Header>
-              
+
               <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Isaiah+47-48%2C+2+Kings+18%3A9-37&version=NLT;WEB;CJB" target="_blank">Isaiah 47-48, 2   Kings 18(9-37)</Link><br/>
                   <Link to="https://www.biblegateway.com/passage/?search=2+Kings+19&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 19</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-     
+
       <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -264,14 +264,14 @@ const SecondPage = () => (
                 </Accordion.Item>
               </Accordion>
 
-      
+
       <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
                   Saturday, August 3, 2024 - Psalm 76, Isaiah 40-41 / Isaiah 42
                   </Accordion.Header>
 
-                  <Accordion.Body>  
+                  <Accordion.Body>
           <Link to="https://www.biblegateway.com/passage/?search=Psalm+76%2C+Isaiah+40-41&version=NLT;WEB;CJB" target="_blank">Psalm 76, Isaiah 40-41</Link><br/>
           <Link to="https://www.biblegateway.com/passage/?search=Isaiah+42&version=NLT;WEB;CJB" target="_blank">Read Together Isaiah 42</Link>
                   </Accordion.Body>
@@ -365,7 +365,7 @@ const SecondPage = () => (
                   <Accordion.Header>
                     Saturday, July 6, 2024 - Isaiah 28-30 / Isaiah 31
                   </Accordion.Header>
-                  
+
                   <Accordion.Body>
                     <Link
                       to="https://www.biblegateway.com/passage/?search=Isaiah+28-30&version=NLT;WEB;CJB"
