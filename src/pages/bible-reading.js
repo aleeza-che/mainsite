@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, November 30, 2024 - Jeremiah 22-24 / Jeremiah 25
+                </Accordion.Header>
+
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2022-24&version=NLT;WEB;CJB" target="_blank">Jeremiah 22-24</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2025&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 25</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+ 
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, November 23, 2024 - Jeremiah 18-20 / Jeremiah 21
                 </Accordion.Header>
 
@@ -91,6 +104,13 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>October</Accordion.Header>
+            <Accordion.Body>
+
 
         <Accordion>
             <Accordion.Item eventKey="0">
@@ -144,6 +164,15 @@ const SecondPage = () => (
           </Accordion.Item>
         </Accordion>
 
+
+
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
+        
+        
+        
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>September</Accordion.Header>
