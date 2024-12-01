@@ -56,11 +56,11 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>October</Accordion.Header>
+            <Accordion.Header>November</Accordion.Header>
             <Accordion.Body>
 
       <Accordion>
-            <Accordion.Item>
+      <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   Saturday, November 30, 2024 - Jeremiah 22-24 / Jeremiah 25
                 </Accordion.Header>

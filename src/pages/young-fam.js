@@ -56,7 +56,7 @@ const SecondPage = () => (
       </Accordion>
 
       <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0"> 
                   <Accordion.Header>
                         Thursday, November 28, 2024 - Thanksgiving Observed
                   </Accordion.Header>
