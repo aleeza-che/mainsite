@@ -40,6 +40,29 @@ const SecondPage = () => (
       </div>
 
       <div class="summaries">
+      
+      
+      
+      <Accordion.Item>
+                <Accordion.Header>
+                  Saturday, December 8, 2024 - Jeremiah 26-28 / Jeremiah 29
+                </Accordion.Header>
+
+              <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2026-28&version=NLT;WEB;CJB" target="_blank">Jeremiah 26-28</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2029&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 29</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+
+      
+      <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>November</Accordion.Header>
+            <Accordion.Body>
+
+      
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
@@ -106,10 +129,20 @@ const SecondPage = () => (
         </Accordion>
 
 
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
+
+
+
+
+
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>October</Accordion.Header>
             <Accordion.Body>
+
 
 
         <Accordion>
