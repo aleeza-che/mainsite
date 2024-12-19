@@ -55,7 +55,7 @@ const SecondPage = () => (
 
 
         <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   Saturday, December 14, 2024 - Jeremiah 30-32 / Jeremiah 33
                 </Accordion.Header>
