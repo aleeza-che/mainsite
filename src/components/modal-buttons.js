@@ -3,6 +3,7 @@
  */
  import * as React from 'react';
  import { useState } from 'react';
+ import { StaticImage } from 'gatsby-plugin-image';
  import Button from 'react-bootstrap/Button';
  import Modal from 'react-bootstrap/Modal';
 
@@ -21,7 +22,14 @@ The Kings and Prophets of the Kingdoms of Israel and Judah</Button>
          <Modal.Header closeButton>
            <Modal.Title>The Kings and Prophets of the Kingdoms of Israel and Judah</Modal.Title>
          </Modal.Header>
-         <Modal.Body>  <img src="https://withgladness.com/wp-content/uploads/2024/01/18x24-300.jpg" id="img-1" alt="Chart of the Kings and Prophets of Israel and Judah by Josh Byers"/>
+         <Modal.Body>  <StaticImage
+              style={{ margin: `0` }}
+              src="../images/18x24-300.jpg"
+              width={1800}
+              quality={100}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="The Kings and Prophets of the Kingdoms of Israel and Judah by Josh Byers"
+            />
 </Modal.Body>
          <Modal.Footer>
            <Button variant="secondary" onClick={handleClose}>
