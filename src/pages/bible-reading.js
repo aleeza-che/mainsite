@@ -43,7 +43,7 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
-                  Saturday, December 28, 2024 - Jeremiah 38-40 / Psalm 74
+                  Saturday, January 4, 2024 - Jeremiah 38-40 / Psalm 74
                 </Accordion.Header>
 
               <Accordion.Body>
@@ -55,14 +55,34 @@ const SecondPage = () => (
 
 
         <Accordion>
-            <Accordion.Item eventKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>December 2024</Accordion.Header>
+            <Accordion.Body>
+
+
+        <Accordion>
+            <Accordion.Item>
                 <Accordion.Header>
-                  Saturday, December 21, 2024 - Jeremiah 34-36 / Jeremiah 37
+                  Saturday, December 28, 2024 - Jeremiah 30-32 / Jeremiah 33
                 </Accordion.Header>
 
               <Accordion.Body>
-                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2034-36&version=NLT;WEB;CJB" target="_blank">Jeremiah 34-36</Link><br/>
-                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2037&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 37</Link>
+              <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2030-32&version=NLT;WEB;CJB" target="_blank">Jeremiah 30-32</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2033&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 33</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  Saturday, December 21, 2024 - Jeremiah 30-32 / Jeremiah 33
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2030-32&version=NLT;WEB;CJB" target="_blank">Jeremiah 30-32</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2033&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 33</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -94,6 +114,13 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+
+
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
 
 
         <Accordion>
