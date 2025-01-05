@@ -46,7 +46,20 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
-                        Thursday, January 2, 2024 - Leviticus 23-25
+                        Thursday, January 9, 2025 - Leviticus 27, Numbers 1-2 / Numbers 3
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2027%2C%20Numbers%201-2&version=NLT;WEB;CJB" target="_blank">Leviticus 27, Numbers 1-2</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%203&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 3</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, January 2, 2025 - Leviticus 23-25
                   </Accordion.Header>
                   <Accordion.Body>
                         <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2023-25&version=NLT;WEB;CJB" target="_blank">Leviticus 23-25</Link><br/>
@@ -54,6 +67,13 @@ const SecondPage = () => (
                   </Accordion.Body>
             </Accordion.Item>
       </Accordion>
+      <br/><hr/>
+
+      <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header><h5>2024</h5></Accordion.Header>
+            <Accordion.Body>
+
 
       <Accordion>
             <Accordion.Item eventKey="0">
@@ -585,7 +605,10 @@ const SecondPage = () => (
 </Accordion.Body>      </Accordion.Item>
 </Accordion>
 
-
+</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
 
     </div>
     </div>

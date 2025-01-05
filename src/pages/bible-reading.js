@@ -43,7 +43,7 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
-                  Saturday, January 11, 2024 - Jeremiah 38-40 / Psalm 74
+                  Saturday, January 11, 2025 - Jeremiah 38-40 / Psalm 74
                 </Accordion.Header>
 
               <Accordion.Body>
@@ -55,9 +55,9 @@ const SecondPage = () => (
 
 
         <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  Saturday, January 4, 2024 - Jeremiah 34-36 / Jeremiah 37
+                  Saturday, January 4, 2025 - Jeremiah 34-36 / Jeremiah 37
                 </Accordion.Header>
 
               <Accordion.Body>
@@ -66,6 +66,11 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+<br/><hr/>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header><h5>2024</h5></Accordion.Header>
+            <Accordion.Body>
 
 
         <Accordion>
@@ -138,7 +143,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>November</Accordion.Header>
+            <Accordion.Header>November 2024</Accordion.Header>
             <Accordion.Body>
 
       <Accordion>
@@ -215,7 +220,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>October</Accordion.Header>
+            <Accordion.Header>October 2024</Accordion.Header>
             <Accordion.Body>
 
 
@@ -282,7 +287,7 @@ const SecondPage = () => (
         
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>September</Accordion.Header>
+            <Accordion.Header>September 2024</Accordion.Header>
             <Accordion.Body>
 
         <Accordion>
@@ -344,7 +349,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>August</Accordion.Header>
+            <Accordion.Header>August 2024</Accordion.Header>
             <Accordion.Body>
 
 
@@ -422,7 +427,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>July</Accordion.Header>
+            <Accordion.Header>July 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -526,7 +531,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>June</Accordion.Header>
+            <Accordion.Header>June 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -650,7 +655,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>May</Accordion.Header>
+            <Accordion.Header>May 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -749,7 +754,7 @@ const SecondPage = () => (
         </Accordion>
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>April</Accordion.Header>
+            <Accordion.Header>April 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -847,7 +852,7 @@ const SecondPage = () => (
         </Accordion>
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>March</Accordion.Header>
+            <Accordion.Header>March 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -1015,7 +1020,7 @@ const SecondPage = () => (
         </Accordion>
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>February</Accordion.Header>
+            <Accordion.Header>February 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -1120,7 +1125,7 @@ const SecondPage = () => (
 
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>January</Accordion.Header>
+            <Accordion.Header>January 2024</Accordion.Header>
             <Accordion.Body>
               <Accordion>
                 <Accordion.Item eventKey="0">
@@ -1194,6 +1199,15 @@ const SecondPage = () => (
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
+
+
+
       </div>
       <div style={{ marginTop: `20px` }}>
         <Link to="/bible-reading-2023/">
