@@ -46,6 +46,54 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, January 9, 2024 - Leviticus 27, Numbers 1-2 / Number 3
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2027%2C%20Numbers%201-2&version=NLT;WEB;CJB" target="_blank">Leviticus 27, Numbers 1-2</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%203&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 3</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, January 2, 2024 - Leviticus 23-25
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2023-25&version=NLT;WEB;CJB" target="_blank">Leviticus 23-25</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2026&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 26</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, December 26, 2024 - Leviticus 20-22 (Reassigned)
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2020-22&version=NLT;WEB;CJB" target="_blank">Leviticus 20-22</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2023&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 23</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, December 19, 2024 - Leviticus 20-22 (Reassigned)
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2020-22&version=NLT;WEB;CJB" target="_blank">Leviticus 20-22</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2023&version=NLT;WEB;CJB" target="_blank">Read Together Leviticus 23</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, December 12, 2024 - Leviticus 20-22 (Reassigned)
                   </Accordion.Header>
                   <Accordion.Body>
