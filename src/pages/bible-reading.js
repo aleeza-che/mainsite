@@ -43,6 +43,20 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, January 18, 2025 - Psalm 79, 2 Kings 24-25 / Habakkuk 1
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Psalm%2079%2C%202%20Kings%2024-25&version=NLT;WEB;CJB" target="_blank">Psalm 79, 2 Kings 24-25</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Habakkuk%201&version=NLT;WEB;CJB" target="_blank">Read Together Habakkuk 1</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, January 11, 2025 - Jeremiah 38-40 / Psalm 74
                 </Accordion.Header>
 

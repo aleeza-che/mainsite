@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, January 16, 2025 - Leviticus 27, Numbers 3-5 / Numbers 6
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2027%2C%20Numbers%203-5&version=NLT;WEB;CJB" target="_blank">Numbers 3-5</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%206&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 6</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, January 9, 2025 - Leviticus 27, Numbers 1-2 / Numbers 3
                   </Accordion.Header>
                   <Accordion.Body>
