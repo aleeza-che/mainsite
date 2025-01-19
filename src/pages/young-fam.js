@@ -46,10 +46,23 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
-                        Thursday, January 16, 2025 - Leviticus 27, Numbers 3-4 / Numbers 5
+                        Thursday, January 23, 2025 - Numbers 6-8 / Numbers 9
                   </Accordion.Header>
                   <Accordion.Body>
-                        <Link to="https://www.biblegateway.com/passage/?search=Leviticus%2027%2C%20Numbers%203-4&version=NLT;WEB;CJB" target="_blank">Numbers 3-4</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%206-8&version=NLT;WEB;CJB" target="_blank">Numbers 6-8</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%209&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 9</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, January 16, 2025 - Numbers 3-4 / Numbers 5
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%203-4&version=NLT;WEB;CJB" target="_blank">Numbers 3-4</Link><br/>
                         <Link to="https://www.biblegateway.com/passage/?search=Numbers%205&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 5</Link>
                   </Accordion.Body>
             </Accordion.Item>
