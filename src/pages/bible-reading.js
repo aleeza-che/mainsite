@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, February 1, 2025 - Jeremiah 43-45 / Jeremiah 46
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2043-45&version=NLT;WEB;CJB" target="_blank">Jeremiah 43-45</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2046&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 46</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, January 25, 2025 - Habakkuk 2-3, Jeremiah 41 / Jeremiah 42
                 </Accordion.Header>
 
