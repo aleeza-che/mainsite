@@ -43,12 +43,25 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, February 15, 2025 - 2 Kings 24:1-5, Jeremiah 47, Daniel 1-2 / 2 Kings 24:6-20
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2024%3A1-5%2C%20Jeremiah%2047%2C%20Daniel%201-2&version=NLT;WEB;CJB" target="_blank">2 Kings 24:1-5, Jeremiah 47, Daniel 1-2</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2024%3A6-20&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 24:6-20</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, February 8, 2025 - Jeremiah 47, Daniel 1-2 / 2 Kings 24 (refresher)
                 </Accordion.Header>
 
               <Accordion.Body>
               <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2047%2C%20Daniel%201-2&version=NLT;WEB;CJB" target="_blank">Jeremiah 47, Daniel 1-2</Link><br/>
-                  <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2024&version=NLT;WEB;CJB" target="_blank">2 Kings 24</Link>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2024&version=NLT;WEB;CJB" target="_blank">Read Together 2 Kings 24</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>

@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, February 13, 2025 - Numbers 18-20 / Psalms 90
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Numbers%2018-20&version=NLT;WEB;CJB" target="_blank">Numbers 18-20</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Psalms%2090&version=NLT;WEB;CJB" target="_blank">Read Together Psalms 90</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, February 6, 2025 - Numbers 14-16 / Numbers 17
                   </Accordion.Header>
                   <Accordion.Body>
