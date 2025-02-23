@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, February 29, 2025 - Ezekiel 3-5 / Discover Together: Ezekiel 6
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%203-5&version=NLT;WEB;CJB" target="_blank">Ezekiel 3-5</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%206&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 6</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, February 22, 2025 - Jeremiah 48-49, Ezekiel 1 / Ezekiel 2
                 </Accordion.Header>
 
