@@ -43,7 +43,20 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
-                  Saturday, February 29, 2025 - Ezekiel 3-5 / Discover Together: Ezekiel 6
+                  Saturday, March 8, 2025 - Ezekiel 7-9 / Discover Together: Ezekiel 10
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%207-9&version=NLT;WEB;CJB" target="_blank">Ezekiel 7-9</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2010&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 10</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  Saturday, March 1, 2025 - Ezekiel 3-5 / Discover Together: Ezekiel 6
                 </Accordion.Header>
 
               <Accordion.Body>
@@ -52,6 +65,20 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  Saturday, February 29, 2025 - Jeremiah 48-49, Ezekiel 1 / Ezekiel 2 (reassigned)
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2048-49%2C%20Ezekiel%201&version=NLT;WEB;CJB" target="_blank">Jeremiah 48-49, Ezekiel 1</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%202&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 2</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
 
         <Accordion>
             <Accordion.Item eventKey="0">
