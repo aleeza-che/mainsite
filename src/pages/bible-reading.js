@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, March 22, 2025 - Ezekiel 15-17 / Discover Together: Ezekiel 18
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2015-17&version=NLT;WEB;CJB" target="_blank">Ezekiel 15-17</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2018&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 18</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, March 15, 2025 - Ezekiel 11-13 / Discover Together: Ezekiel 14
                 </Accordion.Header>
 

@@ -43,8 +43,22 @@ const SecondPage = () => (
 
 
 <div class="summaries">
-<Accordion>
-            <Accordion.Item>
+
+
+            <Accordion>
+                  <Accordion.Item>
+                        <Accordion.Header>
+                              Thursday, March 20, 2025 - Numbers 33-35 / Numbers 36 (Reassigned)
+                        </Accordion.Header>
+                        <Accordion.Body>
+                              <Link to="https://www.biblegateway.com/passage/?search=Numbers%2033-35&version=NLT;WEB;CJB" target="_blank">Numbers 33-35</Link><br/>
+                              <Link to="https://www.biblegateway.com/passage/?search=Numbers%2036&version=NLT;WEB;CJB" target="_blank">Read Together Numbers 36</Link>
+                        </Accordion.Body>
+                  </Accordion.Item>
+            </Accordion>
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, March 13, 2025 - Numbers 33-35 / Numbers 36
                   </Accordion.Header>
@@ -57,7 +71,7 @@ const SecondPage = () => (
 
 
       <Accordion>
-            <Accordion.Item eventKey="0"> 
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, March 6, 2025 - Numbers 29-31 / Numbers 32
                   </Accordion.Header>
@@ -241,7 +255,7 @@ const SecondPage = () => (
       </Accordion>
 
       <Accordion>
-            <Accordion.Item eventKey="0"> 
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, November 28, 2024 - Thanksgiving Observed
                   </Accordion.Header>
