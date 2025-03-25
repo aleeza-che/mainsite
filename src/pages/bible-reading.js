@@ -43,17 +43,30 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
-                  Saturday, March 22, 2025 - Ezekiel 15-17 / Discover Together: Ezekiel 18
+                  Saturday, March 29, 2025 - Ezekiel 16-18 / Discover Together: Ezekiel 19
                 </Accordion.Header>
 
               <Accordion.Body>
-              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2015-17&version=NLT;WEB;CJB" target="_blank">Ezekiel 15-17</Link><br/>
-                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2018&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 18</Link>
+              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2016-18&version=NLT;WEB;CJB" target="_blank">Ezekiel 16-18</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2019&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 19</Link>
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
 
         <Accordion>
+              <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    Saturday, March 22, 2025 - Recapped Ezekiel 11-14 / Discover Together: Ezekiel 15
+                  </Accordion.Header>
+
+                <Accordion.Body>
+                <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2011-14&version=NLT;WEB;CJB" target="_blank">Ezekiel 11-14</Link><br/>
+                    <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2015&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 15</Link>
+                </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+
+          <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   Saturday, March 15, 2025 - Ezekiel 11-13 / Discover Together: Ezekiel 14
@@ -303,7 +316,7 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
- 
+
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
@@ -427,9 +440,9 @@ const SecondPage = () => (
           </Accordion.Item>
         </Accordion>
         <Accordion></Accordion>
-        
-        
-        
+
+
+
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>September 2024</Accordion.Header>
