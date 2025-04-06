@@ -43,6 +43,19 @@ const SecondPage = () => (
       <Accordion>
             <Accordion.Item>
                 <Accordion.Header>
+                  Saturday, April 12, 2025 - Ezekiel 20-22 / Discover Together: Ezekiel 23 (reassigned)
+                </Accordion.Header>
+
+              <Accordion.Body>
+              <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2020-22&version=NLT;WEB;CJB" target="_blank">Ezekiel 20-22</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ezekiel%2023&version=NLT;WEB;CJB" target="_blank">Read Together Ezekiel 23</Link>
+              </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+            <Accordion.Item eventKey="0">
+                <Accordion.Header>
                   Saturday, April 5, 2025 - Ezekiel 20-22 / Discover Together: Ezekiel 23
                 </Accordion.Header>
 
@@ -52,6 +65,16 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+
+
+
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>March</Accordion.Header>
+            <Accordion.Body>
+
+
 
         <Accordion>
             <Accordion.Item eventKey="0">
@@ -117,6 +140,20 @@ const SecondPage = () => (
               </Accordion.Body>
           </Accordion.Item>
         </Accordion>
+
+
+
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+
+
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>February</Accordion.Header>
+            <Accordion.Body>
+
 
         <Accordion>
             <Accordion.Item eventKey="0">
@@ -184,6 +221,19 @@ const SecondPage = () => (
           </Accordion.Item>
         </Accordion>
 
+
+
+        </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>January</Accordion.Header>
+            <Accordion.Body>
+
+
+
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
@@ -236,6 +286,11 @@ const SecondPage = () => (
                   <Link to="https://www.biblegateway.com/passage/?search=Jeremiah%2037&version=NLT;WEB;CJB" target="_blank">Read Together Jeremiah 37</Link>
               </Accordion.Body>
           </Accordion.Item>
+        </Accordion>
+
+
+        </Accordion.Body>
+        </Accordion.Item>
         </Accordion>
 <br/><hr/>
         <Accordion>

@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, April 10, 2025 - Deuteronomy 9-11 / Deuteronomy 12
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%209-11&version=NLT;WEB;CJB" target="_blank">Deuteronomy 9-11</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2012&version=NLT;WEB;CJB" target="_blank">Read Together Deuteronomy 12</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, April 3, 2025 - Deuteronomy 5-7 / Deuteronomy 8
                   </Accordion.Header>
                   <Accordion.Body>
