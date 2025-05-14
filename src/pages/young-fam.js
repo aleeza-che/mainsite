@@ -46,7 +46,7 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
-                        Thursday, April 24, 2025 - Deuteronomy 17-19 / Deuteronomy 20
+                        Thursday, May 15, 2025 - Deuteronomy 17-19 / Deuteronomy 20
                   </Accordion.Header>
                   <Accordion.Body>
                         <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2017-19&version=NLT;WEB;CJB" target="_blank">Deuteronomy 17-19</Link><br/>
