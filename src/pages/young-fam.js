@@ -49,8 +49,8 @@ const SecondPage = () => (
                         Thursday, June 19, 2025 - Deuteronomy 33-35 / Deuteronomy 36
                   </Accordion.Header>
                   <Accordion.Body>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2029-31&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-35</Link><br/>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2032&version=NLT;WEB;CJB" target="_blank">Read Together Deuteronomy 36</Link>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-35&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-35</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2036&version=NLT;WEB;CJB" target="_blank">Read Together Deuteronomy 36</Link>
                   </Accordion.Body>
             </Accordion.Item>
       </Accordion>
