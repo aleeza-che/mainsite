@@ -46,11 +46,11 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
-                        Thursday, June 19, 2025 - Deuteronomy 33-35 / Deuteronomy 36
+                        Thursday, June 19, 2025 - Deuteronomy 33-34, Psalm 91 / Joshua 1
                   </Accordion.Header>
                   <Accordion.Body>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-35&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-35</Link><br/>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2036&version=NLT;WEB;CJB" target="_blank">Read Together Deuteronomy 36</Link>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-35&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-34, Psalm 91</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-34%2C%20Psalm%2091&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 1</Link>
                   </Accordion.Body>
             </Accordion.Item>
       </Accordion>
