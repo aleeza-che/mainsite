@@ -46,11 +46,24 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, June 26, 2025 - Psalm 90, Joshua 2-3 / Joshua 4
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Psalm%2090%2C%20Joshua%202-3&version=NLT;WEB;CJB" target="_blank">Psalm 90, Joshua 2-3</Link><p><b>note:</b> We're reading Psalm 90 because we missed it as a psalm that some scholars attributed to Moses. It would be inserted right before Deuteronomy.</p>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%204&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 4</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, June 19, 2025 - Deuteronomy 33-34, Psalm 91 / Joshua 1
                   </Accordion.Header>
                   <Accordion.Body>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-35&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-34, Psalm 91</Link><br/>
-                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-34%2C%20Psalm%2091&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 1</Link>
+                        <Link to="https://www.biblegateway.com/passage/?search=Deuteronomy%2033-34%2C%20Psalm%2091&version=NLT;WEB;CJB" target="_blank">Deuteronomy 33-34, Psalm 91</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%201&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 1</Link>
                   </Accordion.Body>
             </Accordion.Item>
       </Accordion>
