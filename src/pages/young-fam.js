@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, July 3, 2025 - Joshua 5-7 / Joshua 8
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%205-7&version=NLT;WEB;CJB" target="_blank">Joshua 5-7</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%208&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 8</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, June 26, 2025 - Psalm 90, Joshua 2-3 / Joshua 4
                   </Accordion.Header>
                   <Accordion.Body>
