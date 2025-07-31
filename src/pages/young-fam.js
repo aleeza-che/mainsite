@@ -43,8 +43,48 @@ const SecondPage = () => (
 
 
 <div class="summaries">
-<Accordion>
+      <Accordion>
             <Accordion.Item>
+                  <Accordion.Header>
+                        Thursday, July 31, 2025 - Joshua 13-15 / Joshua 16
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2013-15&version=NLT;WEB;CJB" target="_blank">Joshua 13-15</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2016&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 16</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, July 24, 2025 - Joshua 9-11 / Joshua 12 reread
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%209-11&version=NLT;WEB;CJB" target="_blank">Joshua 9-11</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2012&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 12</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+
+<Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                        Thursday, July 17, 2025 - Canceled
+                  </Accordion.Header>
+                  <Accordion.Body>
+                       No meeting this week.
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+<Accordion>
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, July 10, 2025 - Joshua 9-11 / Joshua 12
                   </Accordion.Header>
