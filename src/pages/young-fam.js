@@ -43,6 +43,20 @@ const SecondPage = () => (
 
 
 <div class="summaries">
+<Accordion>
+            <Accordion.Item>
+                  <Accordion.Header>
+                        Thursday, August 7, 2025 - Joshua 17-19 / Joshua 20
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2017-19&version=NLT;WEB;CJB" target="_blank">Joshua 17-19</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2020&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 20</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+
       <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
