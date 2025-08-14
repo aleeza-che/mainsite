@@ -46,6 +46,20 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Thursday, August 14, 2025 - Joshua 21-23 / Joshua 24
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2021-23&version=NLT;WEB;CJB" target="_blank">Joshua 21-23</Link><br/>
+                        <Link to="https://www.biblegateway.com/passage/?search=Joshua%2024&version=NLT;WEB;CJB" target="_blank">Read Together Joshua 24</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, August 7, 2025 - Joshua 17-19 / Joshua 20
                   </Accordion.Header>
                   <Accordion.Body>
@@ -58,7 +72,7 @@ const SecondPage = () => (
 
 
       <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="0">
                   <Accordion.Header>
                         Thursday, July 31, 2025 - Joshua 13-15 / Joshua 16
                   </Accordion.Header>
