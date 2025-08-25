@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
             <Accordion.Item>
                   <Accordion.Header>
+                        Tuesday, August 26, 2025 - Overview of Judges
+                  </Accordion.Header>
+                  <Accordion.Body>
+                        <Link to="https://www.biblegateway.com/passage/?search=Judges%201&version=NLT;WEB;CJB" target="_blank">Read Together Judges 1</Link>
+                  </Accordion.Body>
+            </Accordion.Item>
+      </Accordion>
+
+
+
+      <Accordion>
+            <Accordion.Item eventKey="0">
+                  <Accordion.Header>
                         Thursday, August 14, 2025 - Joshua 21-23 / Joshua 24
                   </Accordion.Header>
                   <Accordion.Body>
