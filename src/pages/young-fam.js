@@ -58,7 +58,7 @@ const SecondPage = () => (
 
 
 <Accordion>
-      <Accordion.Item>
+      <Accordion.Item eventKey="0">
             <Accordion.Header>
                   Tuesday, September 9, 2025 - Judges 5-7 / Judges 8
             </Accordion.Header>
