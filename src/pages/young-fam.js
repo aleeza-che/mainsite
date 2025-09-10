@@ -47,6 +47,19 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, September 16, 2025 - Judges 9-11 / Judges 12
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%209-11&version=NLT;WEB;CJB" target="_blank">Judges 9-11</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2012&version=NLT;WEB;CJB" target="_blank">Read Together Judges 12</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item>
+            <Accordion.Header>
                   Tuesday, September 9, 2025 - Judges 5-7 / Judges 8
             </Accordion.Header>
             <Accordion.Body>
@@ -55,7 +68,6 @@ const SecondPage = () => (
             </Accordion.Body>
       </Accordion.Item>
 </Accordion>
-
 
 
 <Accordion>
