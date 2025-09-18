@@ -47,7 +47,20 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, September 16, 2025 - Judges 9-11 / Judges 12
+                  Tuesday, September 23, 2025 - Judges 10-12 / Judges 13
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2010-12&version=NLT;WEB;CJB" target="_blank">Judges 10-12</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2013&version=NLT;WEB;CJB" target="_blank">Read Together Judges 13</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, September 16, 2025 - <span style="text-decoration:line-through">Judges 9-11 / Judges 12</span> We read 9 togther instead.
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Judges%209-11&version=NLT;WEB;CJB" target="_blank">Judges 9-11</Link><br/>
