@@ -60,7 +60,7 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item eventKey="0">
             <Accordion.Header>
-                  Tuesday, September 16, 2025 - <span style="text-decoration:line-through">Judges 9-11 / Judges 12</span> We read 9 togther instead.
+                  Tuesday, September 16, 2025 - <span style={{ textDecoration: `line-through` }}>Judges 9-11 / Judges 12</span> &nbsp; We read Joshua 9 together instead.
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Judges%209-11&version=NLT;WEB;CJB" target="_blank">Judges 9-11</Link><br/>
