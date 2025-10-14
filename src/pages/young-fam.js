@@ -47,7 +47,32 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, September 30, 2025 - Judges 14-16 / Judges 17
+                  Tuesday, September 14, 2025 - Judges 18-20 / Judges 21
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2018-20&version=NLT;WEB;CJB" target="_blank">Judges 18-20</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2021&version=NLT;WEB;CJB" target="_blank">Read Together Judges 21</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+<Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, September 7, 2025 - Judges 14-16 / Judges 17
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2014-16&version=NLT;WEB;CJB" target="_blank">Judges 14-16</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Judges%2017&version=NLT;WEB;CJB" target="_blank">Read Together Judges 17</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  <s>Tuesday, September 30, 2025 - Judges 14-16 / Judges 17</s> - Canceled
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Judges%2014-16&version=NLT;WEB;CJB" target="_blank">Judges 14-16</Link><br/>
