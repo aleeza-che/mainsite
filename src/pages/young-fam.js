@@ -47,7 +47,19 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, September 14, 2025 - Judges 18-20 / Judges 21
+                  Tuesday, October 21, 2025 - Ruth 1-3 / Ruth 4
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ruth%201-3&version=NLT;WEB;CJB" target="_blank">Ruth 1-3</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Ruth%204&version=NLT;WEB;CJB" target="_blank">Ruth 4</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, October 14, 2025 - Judges 18-20 / Judges 21
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Judges%2018-20&version=NLT;WEB;CJB" target="_blank">Judges 18-20</Link><br/>
@@ -59,7 +71,7 @@ const SecondPage = () => (
 <Accordion>
 <Accordion.Item eventKey="0">
             <Accordion.Header>
-                  Tuesday, September 7, 2025 - Judges 14-16 / Judges 17
+                  Tuesday, October 7, 2025 - Judges 14-16 / Judges 17
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Judges%2014-16&version=NLT;WEB;CJB" target="_blank">Judges 14-16</Link><br/>
