@@ -47,6 +47,19 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, November 11, 2025 - 1 Samuel 9-11 / 1 Samuel 12
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%209-11&version=NLT;WEB;CJB" target="_blank">1 Samuel 9-11</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2012&version=NLT;WEB;CJB" target="_blank">1 Samuel 12</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, November 4, 2025 - 1 Samuel 5-7 / 1 Samuel 8
             </Accordion.Header>
             <Accordion.Body>
