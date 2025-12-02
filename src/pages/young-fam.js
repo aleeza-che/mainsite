@@ -47,6 +47,22 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, December 2, 2025 - Psalm 11, 1 Samuel 20, Psalm 59 / 1 Samuel 21
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2011%2C%201%20Samuel%2020%2C%20Psalm%2059&version=NLT;WEB;CJB" target="_blank">Psalm 11, 1 Samuel 20, Psalm 59</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2021&version=NLT;WEB;CJB" target="_blank">1 Samuel 21</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, November 25, 2025 - 1 Samuel 17-19 / Psalm 9
             </Accordion.Header>
             <Accordion.Body>
@@ -60,7 +76,7 @@ const SecondPage = () => (
 
 
 <Accordion>
-      <Accordion.Item>
+      <Accordion.Item eventKey="0">
             <Accordion.Header>
                   Tuesday, November 18, 2025 - 1 Samuel 13-15 / 1 Samuel 16
             </Accordion.Header>
