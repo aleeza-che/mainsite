@@ -44,10 +44,27 @@ const SecondPage = () => (
 
 <div class="summaries">
 
+
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, December 9, 2025 - Psalm 52, 34, 56 / 1 Samuel 22
+                  Tuesday, December 16, 2025 - 1 Samuel 22, Psalm 17 &amp; 57 / Psalm 142
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2022%2C%20Psalm%2017%2C%20Psalm%2057&version=NLT;WEB;CJB" target="_blank">1 Samuel 22, Psalm 17 &amp; 57</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%20142&version=NLT;WEB;CJB" target="_blank">Psalm 142</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, December 9, 2025 - Psalm 52, 34, 56 / <s>1 Samuel 22</s>
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%2052%2C%2034%2C%2056&version=NLT;WEB;CJB" target="_blank">Psalm 52, 34, 56</Link><br/>
