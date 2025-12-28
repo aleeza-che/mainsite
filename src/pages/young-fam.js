@@ -48,6 +48,22 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, December 30, 2025 - 1 Samuel 23, Psalm 54 &amp; 31 / 1 Samuel 24
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2023%2C%20Psalm%2054%2C%20Psalm%2031&version=NLT;WEB;CJB" target="_blank">1 Samuel 22, Psalm 17 &amp; 57</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2024&version=NLT;WEB;CJB" target="_blank">1 Samuel 24</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, December 16, 2025 - 1 Samuel 22, Psalm 17 &amp; 57 / Psalm 142
             </Accordion.Header>
             <Accordion.Body>
