@@ -43,10 +43,25 @@ const SecondPage = () => (
 
 
 <div class="summaries">
-
-
 <Accordion>
       <Accordion.Item>
+            <Accordion.Header>
+                  Tuesday, January 6, 2026 - 1 Samuel 25-27 / 1 Samuel 28
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2025-27&version=NLT;WEB;CJB" target="_blank">1 Samuel 25-27</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2028&version=NLT;WEB;CJB" target="_blank">1 Samuel 28</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header><h5>2025</h5></Accordion.Header>
+            <Accordion.Body>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
             <Accordion.Header>
                   Tuesday, December 30, 2025 - 1 Samuel 23, Psalm 54 &amp; 31 / 1 Samuel 24
             </Accordion.Header>
@@ -698,7 +713,10 @@ const SecondPage = () => (
             </Accordion.Item>
       </Accordion>
       <br/><hr/>
-
+</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion></Accordion>
       <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header><h5>2024</h5></Accordion.Header>
