@@ -46,6 +46,18 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, January 13, 2026 - 1 Samuel 29-31 / 2 Samuel 1
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Samuel%2029-31&version=NLT;WEB;CJB" target="_blank">1 Samuel 29-31</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%201&version=NLT;WEB;CJB" target="_blank">2 Samuel 1</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, January 6, 2026 - 1 Samuel 25-27 / 1 Samuel 28
             </Accordion.Header>
             <Accordion.Body>
