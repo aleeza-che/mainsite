@@ -46,6 +46,19 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, January 20, 2026 - Psalm 35, 64, 109 / Psalm 140
+            </Accordion.Header>
+            <Accordion.Body>
+                  <p>We're catching up on Psalms that we missed in 1 Samuel.<br/>Psalm 35: On David's persecution by Doeg<br/> Psalm 64: On David's persecution by Saul<br/> Psalm 109: On David's persecution by Doeg<br/> Psalm 140: On David's persecution by Doeg</p>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2035%2C%2064%2C%20109&version=NLT;WEB;CJB" target="_blank">Psalm 35, 64, 109</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%20140&version=NLT;WEB;CJB" target="_blank">Psalm 140</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, January 13, 2026 - 1 Samuel 29-31 / 2 Samuel 1
             </Accordion.Header>
             <Accordion.Body>
