@@ -46,7 +46,34 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, January 20, 2026 - Psalm 35, 64, 109 / Psalm 140
+                  Tuesday, February 3, 2026 - Psalm 58, 64, 141 / 2 Samuel 2
+            </Accordion.Header>
+            <Accordion.Body>
+                  <p>We're catching up on Psalms that we missed in 1 Samuel.<br/>Psalm 58: Continuation of 57 on David's refusal to kill Saul<br/> Psalm 63: Prayer of David in the wilderness of Engedi<br/> Psalm 141: Prayer of David when driven from Judea</p>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2058%2C%2064%2C%20141&version=NLT;WEB;CJB" target="_blank">Psalm 58, 64, 141</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%202&version=NLT;WEB;CJB" target="_blank">2 Samuel 2</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, January 27, 2026 - Psalm 35, 64, 109 / Psalm 140
+            </Accordion.Header>
+            <Accordion.Body>
+                  <p>We're catching up on Psalms that we missed in 1 Samuel.<br/>Psalm 35: On David's persecution by Doeg<br/> Psalm 64: On David's persecution by Saul<br/> Psalm 109: On David's persecution by Doeg<br/> Psalm 140: On David's persecution by Doeg</p>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2035%2C%2064%2C%20109&version=NLT;WEB;CJB" target="_blank">Psalm 35, 64, 109</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%20140&version=NLT;WEB;CJB" target="_blank">Psalm 140</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, January 20, 2026 - Psalm 35, 64, 109 / Psalm 140 (canceled)
             </Accordion.Header>
             <Accordion.Body>
                   <p>We're catching up on Psalms that we missed in 1 Samuel.<br/>Psalm 35: On David's persecution by Doeg<br/> Psalm 64: On David's persecution by Saul<br/> Psalm 109: On David's persecution by Doeg<br/> Psalm 140: On David's persecution by Doeg</p>
