@@ -46,6 +46,20 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, February 10, 2026 - Psalm 88, 2 Samuel 2-3 / 2 Samuel 4
+            </Accordion.Header>
+            <Accordion.Body>
+                  <p>Psalm 88: We're going way back with this one. This Psalm can be attributed to the affliction in Egypt back in Exodus.</p>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2088%2C%202%20Samuel%202-3&version=NLT;WEB;CJB" target="_blank">Psalm 88, 2 Samuel 2-3</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204&version=NLT;WEB;CJB" target="_blank">2 Samuel 4</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, February 3, 2026 - Psalm 58, 64, 141 / 2 Samuel 2
             </Accordion.Header>
             <Accordion.Body>
