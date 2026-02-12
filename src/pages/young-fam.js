@@ -46,12 +46,25 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, February 10, 2026 - <s>Psalm 88</s>, 2 Samuel 2-3 / 2 Samuel 4
+                  Tuesday, February 17, 2026 - 2 Samuel 4-6 / 2 Samuel 7
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204-6&version=NLT;WEB;CJB" target="_blank">2 Samuel 4-6</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%207&version=NLT;WEB;CJB" target="_blank">2 Samuel 7</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, February 10, 2026 - Psalm 88, 2 Samuel 2-3 / <s>2 Samuel 4</s>
             </Accordion.Header>
             <Accordion.Body>
                   <p>Psalm 88: <s>We're going way back with this one. This Psalm can be attributed to the affliction in Egypt back in Exodus.</s> Upon more research this psalm is more likely attributed to the personal lament of Heman during David's reign.</p>
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%2088%2C%202%20Samuel%202-3&version=NLT;WEB;CJB" target="_blank">Psalm 88, 2 Samuel 2-3</Link><br/>
-                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204&version=NLT;WEB;CJB" target="_blank">2 Samuel 4</Link>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204&version=NLT;WEB;CJB" target="_blank"><s>2 Samuel 4</s></Link>
             </Accordion.Body>
       </Accordion.Item>
 </Accordion>
