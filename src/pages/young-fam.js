@@ -46,11 +46,11 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
-                  Tuesday, February 17, 2026 - 2 Samuel 4-6 / 2 Samuel 7
+                  Tuesday, February 17, 2026 - 2 Samuel 4-6 / Psalm 68
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204-6&version=NLT;WEB;CJB" target="_blank">2 Samuel 4-6</Link><br/>
-                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%207&version=NLT;WEB;CJB" target="_blank">2 Samuel 7</Link>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2068&version=NLT;WEB;CJB" target="_blank">Psalm 68</Link>
             </Accordion.Body>
       </Accordion.Item>
 </Accordion>
