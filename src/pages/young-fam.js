@@ -59,9 +59,20 @@ const SecondPage = () => (
 
 <Accordion>
       <Accordion.Item eventKey="0">
-
             <Accordion.Header>
-                  Tuesday, February 17, 2026 - 2 Samuel 4-6 / Psalm 68
+                  Tuesday, February 24, 2026 - 2 Samuel 4-6 / Psalm 68
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204-6&version=NLT;WEB;CJB" target="_blank">2 Samuel 4-6</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2068&version=NLT;WEB;CJB" target="_blank">Psalm 68</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  <s>Tuesday, February 17, 2026 - 2 Samuel 4-6 / Psalm 68</s> Did not meet, reassigned to the February 24th
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204-6&version=NLT;WEB;CJB" target="_blank">2 Samuel 4-6</Link><br/>
