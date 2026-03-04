@@ -47,6 +47,19 @@ const SecondPage = () => (
       <Accordion.Item>
 
             <Accordion.Header>
+                  Tuesday, March 10, 2026 - Psalm 24, 2 Samuel 9-10 / Psalm 20
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2024%2C%202%20Samuel%209-10&version=NLT;WEB;CJB" target="_blank">Psalm 24, 2 Samuel 9-10</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalm%2020&version=NLT;WEB;CJB" target="_blank">Psalm 20</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+
+            <Accordion.Header>
                   Tuesday, March 3, 2026 - 2 Samuel 7-8, Psalm 60 / Psalm 15
             </Accordion.Header>
             <Accordion.Body>
@@ -55,7 +68,6 @@ const SecondPage = () => (
             </Accordion.Body>
       </Accordion.Item>
 </Accordion>
-
 
 <Accordion>
       <Accordion.Item eventKey="0">
@@ -72,7 +84,7 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item eventKey="0">
             <Accordion.Header>
-                  <s>Tuesday, February 17, 2026 - 2 Samuel 4-6 / Psalm 68</s> Did not meet, reassigned to the February 24th
+                  <s>Tuesday, February 17, 2026 - 2 Samuel 4-6 / Psalm 68</s>&nbsp; Did not meet, reassigned to the February 24th
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%204-6&version=NLT;WEB;CJB" target="_blank">2 Samuel 4-6</Link><br/>
