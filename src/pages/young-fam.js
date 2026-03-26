@@ -47,6 +47,19 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, March 31, 2026 - 2 Samuel 14, 2 Samuel 15, Psalms 3 / 2 Samuel 16
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%2014%2C%202%20Samuel%2015%2C%20Psalms%203&version=NLT;WEB;CJB" target="_blank">2 Samuel 14, 2 Samuel 15, Psalms 3</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%2016&version=NLT;WEB;CJB" target="_blank">2 Samuel 16</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0"> 
+            <Accordion.Header>
                   Tuesday, March 24, 2026 - Psalm 33, Psalm 51, Psalm 103 / 2 Samuel 13
             </Accordion.Header>
             <Accordion.Body>
