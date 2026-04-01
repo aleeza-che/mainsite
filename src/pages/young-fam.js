@@ -47,6 +47,20 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
             <Accordion.Header>
+                  Tuesday, April 7, 2026 - Psalms 7, Psalms 63, 2 Samuel 17 / Psalms 4
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalms%207%2C%20Psalms%2063%2C%202%20Samuel%2017&version=NLT;WEB;CJB" target="_blank">Psalms 7, Psalms 63, 2 Samuel 17</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalms%204&version=NLT;WEB;CJB" target="_blank">Psalms 4</Link>
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
                   Tuesday, March 31, 2026 - 2 Samuel 14, 2 Samuel 15, Psalms 3 / 2 Samuel 16
             </Accordion.Header>
             <Accordion.Body>
