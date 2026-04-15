@@ -47,11 +47,32 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
 
+
+            <Accordion.Header>
+                  Tuesday, April 21, 2026 - Psalms 55, Psalms 62, Psalms 70 / Psalms 71
+            </Accordion.Header>
+            <Accordion.Body>
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalms%2055%2C%20Psalms%2062%2C%20Psalms%2070&version=NLT;WEB;CJB" target="_blank">Psalms 55, Psalms 62, Psalms 70</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=Psalms%2071&version=NLT;WEB;CJB" target="_blank">Psalms 71</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+
+
             <Accordion.Header>
                   Tuesday, April 14, 2026 - Psalms 5, Psalms 42, Psalms 43 / Psalms 41
             </Accordion.Header>
             <Accordion.Body>
                   <Link to="https://www.biblegateway.com/passage/?search=Psalms%205%2C%20Psalms%2042%2C%20Psalms%2043&version=NLT;WEB;CJB" target="_blank">Psalms 5, Psalms 42, Psalms 43</Link><br/>
+
                   <Link to="https://www.biblegateway.com/passage/?search=Psalms%2041&version=NLT;WEB;CJB" target="_blank">Psalms 41</Link>
 
             </Accordion.Body>
