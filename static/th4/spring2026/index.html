@@ -180,6 +180,19 @@
     .content {
         counter-reset: paragraph;
     }
+
+.chapter-header.sticky {
+    position: sticky;
+    top: -40px;
+    background-color: #ffffff;
+    z-index: 10;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    color: #2d2d2d;
+    margin-left: -40px;
+    width: calc(100% + 80px);
+}
+
     </style>
 </head>
 <body>
@@ -285,6 +298,35 @@
         document.querySelectorAll('.chapter-header').forEach(header => {
             header.nextElementSibling.style.display = 'block';
         });
+        const rightColumn = document.getElementById('right-column');
+const chapterHeaders = document.querySelectorAll('.chapter-header');
+const chapterSections = document.querySelectorAll('.chapter-section');
+
+rightColumn.addEventListener('scroll', () => {
+    let currentStickyIndex = -1;
+
+    chapterSections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const rightColumnRect = rightColumn.getBoundingClientRect();
+
+        // Calculate offset relative to the scroll container
+        const offsetTop = rect.top - rightColumnRect.top;
+
+        // If the top of the section is at or above the top of the container, mark it as current
+        if (offsetTop <= 0) {
+            currentStickyIndex = index;
+        }
+    });
+
+    chapterHeaders.forEach((header, index) => {
+        if (index === currentStickyIndex) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+});
+
     </script>
 </body>
 </html>
