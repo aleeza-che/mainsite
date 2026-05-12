@@ -52,7 +52,7 @@ const SecondPage = () => (
                   Tuesday, May 12, 2026 - 2 Samuel 23, Psalm 108, 2 Samuel 24 / Psalms 60
             </Accordion.Header>
             <Accordion.Body>
-                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%2023%2C%20Psalm%20108%2C%202%20Samuel%2024&version=NLT;WEB;CJB" target="_blank">2 Samuel 20-22</Link><br/>
+                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%2023%2C%20Psalm%20108%2C%202%20Samuel%2024&version=NLT;WEB;CJB" target="_blank">2 Samuel 23, Psalm 108, 2 Samuel 24</Link><br/>
 
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%2060&version=NLT;WEB;CJB" target="_blank">Psalms 60</Link>
 
