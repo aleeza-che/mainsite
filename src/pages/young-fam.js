@@ -54,7 +54,7 @@ const SecondPage = () => (
             </Accordion.Header>
             <Accordion.Body>
 
-                  <Link to="https://www.biblegateway.com/passage/?search=2%20Samuel%2023%2C%20Psalm%20108%2C%202%20Samuel%2024&version=NLT;WEB;CJB" target="_blank">1 Kings 1 & 2, Psalms 37</Link><br/>
+                  <Link to="https://www.biblegateway.com/quicksearch/?quicksearch=1+Kings+1+%26+2%2C+Psalms+37&version=NLT%3BWEB%3BCJB" target="_blank">1 Kings 1 & 2, Psalms 37</Link><br/>
 
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%2072&version=NLT;WEB;CJB" target="_blank">Psalms 72</Link>
 
