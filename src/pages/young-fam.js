@@ -49,9 +49,32 @@ const SecondPage = () => (
 
 
 
+
+            <Accordion.Header>
+                  Tuesday, May 26, 2026 - 1 Kings 3, Psalms 45, 1 Kings 4 / 1 Kings 5
+            </Accordion.Header>
+
+            <Accordion.Body>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%203%2C%20Psalms%2045%2C%201%20Kings%204&version=NLT;WEB;CJB" target="_blank">1 Kings 3, Psalms 45, 1 Kings 4</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%205&version=NLT;WEB;CJB" target="_blank">1 Kings 5</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+
+
+
+
             <Accordion.Header>
                   Tuesday, May 19, 2026 - 1 Kings 1 & 2, Psalms 37 / Psalms 72
             </Accordion.Header>
+
             <Accordion.Body>
 
                   <Link to="https://www.biblegateway.com/quicksearch/?quicksearch=1+Kings+1%2C+1+Kings+2%2C+Psalms+37&version=NLT%3BWEB%3BCJB" target="_blank">1 Kings 1 & 2, Psalms 37</Link><br/>
