@@ -46,12 +46,44 @@ const SecondPage = () => (
 
 <Accordion>
       <Accordion.Item>
-
-
-
-
             <Accordion.Header>
-                  Tuesday, May 26, 2026 - 1 Kings 3, Psalms 45, 1 Kings 4 / 1 Kings 5
+                  Tuesday, June 9, 2026 - 1 Kings 6-8 / 1 Kings 9
+            </Accordion.Header>
+
+            <Accordion.Body>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%206-8&version=NLT;WEB;CJB" target="_blank">1 Kings 6-8</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%209&version=NLT;WEB;CJB" target="_blank">1 Kings 9</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, June 2, 2026 - 1 Kings 3, Psalms 45, 1 Kings 4 / 1 Kings 5 
+            </Accordion.Header>
+
+            <Accordion.Body>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%203%2C%20Psalms%2045%2C%201%20Kings%204&version=NLT;WEB;CJB" target="_blank">1 Kings 3, Psalms 45, 1 Kings 4</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%205&version=NLT;WEB;CJB" target="_blank">1 Kings 5</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                  Tuesday, May 26, 2026 - 1 Kings 3, Psalms 45, 1 Kings 4 / 1 Kings 5 (Did not Meet)
             </Accordion.Header>
 
             <Accordion.Body>
@@ -67,10 +99,6 @@ const SecondPage = () => (
 
 <Accordion>
       <Accordion.Item eventKey="0">
-
-
-
-
             <Accordion.Header>
                   Tuesday, May 19, 2026 - 1 Kings 1 & 2, Psalms 37 / Psalms 72
             </Accordion.Header>
@@ -89,9 +117,6 @@ const SecondPage = () => (
 
 <Accordion>
       <Accordion.Item eventKey="0">
-
-
-
             <Accordion.Header>
                   Tuesday, May 12, 2026 - 2 Samuel 23, Psalm 108, 2 Samuel 24 / Psalms 60
             </Accordion.Header>
