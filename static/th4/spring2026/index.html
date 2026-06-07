@@ -1,419 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TH4 - Spring 2026</title>
-    <link rel="icon" href="th4ob.png" type="image/png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-            background-color: #f8f8f8;
-            color: #333;
-            font-size: 2.4em;
-        }
-
-        .header {
-            padding: 24px 16px;
-            border-bottom: 1px solid #e0e0e0;
-            text-align: left;
-            background-color: #ffffff;
-        }
-
-        .header h1 {
-            font-size: 1em;
-            font-weight: 600;
-            color: #2d2d2d;
-        }
-
-        .main-container {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
-        }
-
-        .column {
-            flex: 1;
-            height: 100%;
-            overflow-y: auto;
-            padding: 40px;
-            scrollbar-width: thin;
-            scrollbar-color: #c0c0c0 #f0f0f0;
-            position: relative;
-        }
-
-        .column::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .column::-webkit-scrollbar-track {
-            background: #f0f0f0;
-        }
-
-        .column::-webkit-scrollbar-thumb {
-            background-color: #c0c0c0;
-            border-radius: 3px;
-        }
-
-        .column::-webkit-scrollbar-thumb:hover {
-            background-color: #a0a0a0;
-        }
-
-        .content h2 {
-            margin: 16px 0 8px 0;
-            font-size: 1.4em;
-            font-weight: 600;
-            color: #2d2d2d;
-        }.content h3 {
-            margin: 16px 0 20px 0;
-            font-size: 1.4em;
-            font-weight: 400;
-            color: #2d2d2d;
-        }
-
-        .content p {
-            margin-bottom: 12px;
-            line-height: 1.6;
-        }
-
-        /* Updated list styles */
-        ol, ul {
-            margin-left: 40px;
-        }
-
-        li {
-            margin-bottom: 15px;
-            line-height: 54px;
-        }
-        li li {
-            margin-top: 10px;
-        }
-
-        /* Light border between columns */
-        #left-column {
-            border-right: 1px solid #e0e0e0;
-        }
-
-        /* Bible version styling */
-        .bible-version {
-            display: inline-block;
-            font-family: sans-serif;
-            background-color: #e9e9e9;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 0.5em;
-            font-weight: bold;
-            position: relative;
-            top: -3px;
-        }
-
-        /* Chapter reveal styling */
-        .chapter-section {
-            margin-bottom: 30px;
-        }
-
-        .chapter-header {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            color: #999;
-        }
-
-        .chapter-header::before {
-            content: "▼ ";
-            margin-right: 8px;
-            font-size: 1em;
-            color:#999;
-        }
-
-        .chapter-header.collapsed::before {
-            content: "▶ ";
-        }
-
-        .chapter-content {
-            padding-left: 20px;
-        }
-
-        /* Verse number styling */
-        .verse-number {
-            font-size: 0.5em;
-            vertical-align: super;
-            color: #666;
-            font-weight: bold;
-        }
-
-        /* Paragraph numbering */
-        .paragraph {
-            margin-bottom: 25px;
-            padding-left: 20px;
-        }
-
-        .paragraph .para-num {
-            content: counter(paragraph);
-            counter-increment: paragraph;
-            display: inline-block;
-            width: 20px;
-           margin-left: -50px;
-    margin-right: 33px;
-            text-align: right;
-            color: #666;
-            font-weight: bold;
-        }
-        .paragraph .two-digit {
-    margin-left: -70px;
-    margin-right: 57px;
-}
-
-    /* Move counter-reset to the content container */
-    .content {
-        counter-reset: paragraph;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TH4 - Spring 2026</title>
+  <link rel="icon" href="th4ob.png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
 
-.chapter-header.sticky {
-    position: sticky;
-    top: -40px;
-    background-color: #ffffff;
-    z-index: 10;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    color: #2d2d2d;
-    margin-left: -40px;
-    width: calc(100% + 80px);
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #f8f8f8;
+      color: #333;
+      font-size: 2.4em;
+    }
+
+    .header {
+      padding: 24px 16px;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: left;
+      background-color: #ffffff;
+    }
+
+    .header h1 {
+      font-size: 1em;
+      font-weight: 600;
+      color: #2d2d2d;
+    }
+    button {
+      font-size: 2.4rem;
+      font-weight:400;
+      line-height: 3.2rem;
+    }
+
+    .main-container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .column {
+      flex: 1;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0 40px 40px 40px;
+      scrollbar-width: thin;
+      scrollbar-color: #c0c0c0 #f0f0f0;
+      position: relative;
+    }
+
+    .column::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .column::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+
+    .column::-webkit-scrollbar-thumb {
+      background-color: #c0c0c0;
+      border-radius: 3px;
+    }
+
+    .column::-webkit-scrollbar-thumb:hover {
+      background-color: #a0a0a0;
+    }
+
+    .content h2 {
+      margin: 16px 0 8px 0;
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #2d2d2d;
+    }
+
+    .content h3 {
+      margin: 16px 0 20px 0;
+      font-size: 1.4em;
+      font-weight: 400;
+      color: #2d2d2d;
+    }
+
+    .content p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    ol, ul {
+      margin-left: 40px;
+    }
+
+    li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    li li {
+      margin-top: 10px;
+    }
+
+    #left-column {
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .bible-version {
+      display: inline-block;
+      font-family: sans-serif;
+      background-color: #e9e9e9;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.5em;
+      font-weight: bold;
+      position: relative;
+      top: -3px;
+    }
+
+    .chapter-section {
+      margin-bottom: 30px;
+    }
+
+    .chapter-header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      color: #999;
+    }
+
+    .chapter-header::before {
+      content: "▼ ";
+      margin-right: 8px;
+      font-size: 1em;
+      color: #999;
+    }
+
+    .chapter-header.collapsed::before {
+      content: "▶ ";
+    }
+
+    .chapter-content {
+      padding-left: 20px;
+    }
+
+    .verse-number {
+      font-size: 0.5em;
+      vertical-align: super;
+      color: #666;
+      font-weight: bold;
+    }
+
+    .paragraph {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+
+    .paragraph .para-num {
+      content: counter(paragraph);
+      counter-increment: paragraph;
+      display: inline-block;
+      width: 20px;
+      margin-left: -50px;
+      margin-right: 33px;
+      text-align: right;
+      color: #666;
+      font-weight: bold;
+    }
+
+    .paragraph .two-digit {
+      margin-left: -70px;
+      margin-right: 57px;
+    }
+
+    .content {
+      counter-reset: paragraph;
+    }
+
+    .chapter-header.sticky {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 10;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      color: #2d2d2d;
+      margin-left: -40px;
+      width: calc(100% + 80px);
+    }
+
+
+
+/* Container styling */
+.collapsible-list {
+  font-family: sans-serif;
 }
 
-    </style>
+/* Header button styles */
+.list-header {
+  width: 100%;
+  color: #333;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f8;
+}
+
+.list-header::before {
+  content: none;
+}
+.list-header.has-answer::before {
+  content: '▼ ';
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.list-header.has-answer.active::before {
+  transform: rotate(-180deg);
+}
+
+
+/* Only show arrows for questions with answers */
+.list-header:has(ul)::before {
+  content: "▼ ";
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.list-header.active:has(ul)::before {
+  transform: rotate(-180deg);
+}
+
+.list-header.active:has(ul) {
+  border-bottom: none;
+}
+
+/* The critical wrapper for animation */
+.list-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Handles the smooth slide */
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Internal padding helper */
+.inner-text {
+  padding: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.questions-header {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    padding: 26px 0 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 20;
+}
+
+#toggle-all-questions {
+  font-size: 0.5em;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+  </style>
 </head>
-<body>
+ <body>
     <div class="header">
-        <h1>TH4 Spring 2026</h1>
+      <h1>TH4 Spring 2026</h1>
     </div>
     <div class="main-container">
-        <div class="column" id="left-column">
-            <div class="content">
-                <h2>Questions</h2>
-               <ol>
-    <li>
-        What is the definition of a principle?
-        <ul>
+      <div class="column" id="left-column">
+        <div class="content">
+  <div class="questions-header">
+  <h2>Questions</h2>
+  <button id="toggle-all-questions">Toggle All</button>
+</div>
+  <div class="collapsible-list">
+    <!-- Question 1 -->
+    <div class="list-item">
+      <button class="list-header">1. What is the definition of a principle?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
             <li>A foundational/general truth prescribing instructions to be applied for life that yields a result.</li>
-        </ul>
-    </li>
-    <li>
-        How do you know when you've encountered a principle in scripture? Structurally, what does it have that lets you know that it is something to be applied?
-    <ul><li>it presents a choice/statement and an outcome</li>
-        <li>any parable of Jesus</li></ul>
-    </li>
-    <li>
-        What's the difference between a principle and a commandment? (Pretty)
-        <ul>
-            <li>Commandment is an instruction by itself. Principle helps to understand the heart of the matter.</li>
-        </ul>
-    </li>
-    <li>
-        What other words/modern day words can we use in place of commandment?
-        <ul>
-            <li>Law</li>
-        </ul>
-    </li>
-    <li>
-        Do principles apply to everyone?
-        <ul>
-            <li>Yes</li>
-        </ul>
-    </li>
-    <li>
-        What is the reason to follow or pay attention to/respect a principle?
-        <ul>
-            <li>They bring (expected) results</li>
-            <li>
-                perception vs. truth (Tab)
-            </li>
-        </ul>
-    </li>
-    <li>
-        Do principles inherently have a specific type of outcome, i.e., good or bad? favorable or unfavorable? For instance can a principle describe what is done to have a poor outcome?
-        <ul>
-            <li>No.</li>
-        </ul>
-    </li>
-    <li>
-        Which book, in your opinion, has the most principles?
-        <ul>
-            <li>Proverbs</li>
-        </ul>
-    </li>
-    <li>
-        Are there any principles in the text that we've read so far?
-        <ul>
-            <li>You become a slave to the one you obey (Romans 6:16)</li>
-            <li>The wages of sin is death (Romans 6:23)</li>
-        </ul>
-    </li>
-    <li>
-        What is a law?
-        <ul>
-            <li>A rule</li>
-        </ul>
-    </li>
-    <li>
-        What basic actions can individuals take in response to a law?
-        <ul>
-            <li>obey</li>
-            <li>break</li>
-        </ul>
-    </li>
-    <li>
-        In this scripture, what is Paul referring to when he says "The law"?
-        <ul>
-            <li>Law given by Moses and Levitical law</li>
-        </ul>
-        
-    </li>
-    <li>How do you know from this passage?
-            <ul>
-                <li>He references one of the 10 commandments</li>
-            </ul>
-        </li>
-    <li>
-        What is the state of sin before the law is given? (Romans 7:8)
-        <ul>
-            <li>Sin is dead</li>
-        </ul>
-    </li>
-    <li>
-        What is sin?
-        <ul><li>the act of disobeying God</li>
-            <li>the symptom of unbelief</li>
-            <li>a state that every man in born into since the fall (Genesis/Adam and Eve)</li>
-            <li>Emerging question: Was Jesus born in sin? (Pretty)</li>
-        </ul>
-    </li>
-    <li>What does it mean to sin?
-        <ul>
-            <li>To disobey. To do the opposite of what God says</li>
-        </ul>
-    </li>
-    <li>In paragraph 5, what is Paul referring to when he is using the word sin?
-        <ul>
-            <li></li>
-        </ul>
-    </li>
-    <li>
-        When the command comes, what does sin do to the person first?
-    </li>
-    <li>
-        What is the law used to produce in a person?
-    </li>
-    <li>
-        What uses the commandment to produce the desire to sin?
-    </li>
-    <li>
-        What is used to produce the desire to sin?
-    </li>
-    <li>
-        Who caused the spirit to die?
-    </li>
-</ol>
-
-            </div>
+          </ul>
         </div>
-        <div class="column" id="right-column">
-            <div class="content">
-                <h2>Reading</h2>
-<h3>Romans 6:16-8:17</h3>
-                <div class="chapter-section">
-                    <div class="chapter-header">Chapter 6</div>
-                    <div class="chapter-content">
-                        <p class="paragraph"><span class="para-num">P1</span><span class="bible-version">NIV</span> <span class="verse-number">16</span> Don't you know that when you offer yourselves to someone as obedient slaves, you are slaves of the one you obey—whether you are slaves to sin, which leads to death, or to obedience, which leads to righteousness? <span class="verse-number">17</span> But thanks be to God that, though you used to be slaves to sin, you have come to obey from your heart the pattern of teaching that has now claimed your allegiance. <span class="verse-number">18</span> You have been set free from sin and have become slaves to righteousness.</p>
-                        <p class="paragraph"><span class="para-num">P2</span><span class="bible-version">NASB</span> <span class="verse-number">19</span> I am speaking in human terms because of the weakness of your flesh. For just as you presented the parts of your body as slaves to impurity and to lawlessness, resulting in further lawlessness, so now present your body's parts as slaves to righteousness, resulting in sanctification. <span class="verse-number">20</span> When you were slaves to sin, you were free from the control of righteousness. <span class="verse-number">21</span> What benefit did you reap at that time from the things you are now ashamed of? Those things result in death! <span class="verse-number">22</span> But now that you have been set free from sin and have become slaves of God, the benefit you reap leads to holiness, and the result is eternal life. <span class="verse-number">23</span> For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.</p>
-                    </div>
-                </div>
-
-                <div class="chapter-section">
-                    <div class="chapter-header">Chapter 7</div>
-                    <div class="chapter-content">
-                        <p class="paragraph"><span class="para-num">P3</span><span class="verse-number">1</span> Do you not know, brothers and sisters—for I am speaking to those who know the law—that the law has authority over someone only as long as that person lives? <span class="verse-number">2</span> For example, by law a married woman is bound to her husband as long as he is alive, but if her husband dies, she is released from the law that binds her to him. <span class="verse-number">3</span> So then, if she has sexual relations with another man while her husband is still alive, she is called an adulteress. But if her husband dies, she is released from that law and is not an adulteress if she marries another man.</p>
-                        <p class="paragraph"><span class="para-num">P4</span><span class="verse-number">4</span> So, my brothers and sisters, you also died to the law through the body of Christ, that you might belong to another, to him who was raised from the dead, in order that we might bear fruit for God. <span class="bible-version">HCSB</span> <span class="verse-number">5</span> For when we were in the flesh, the sinful passions operated through the law in every part of us and bore fruit for death. <span class="verse-number">6</span> But now we have been released from the law, since we have died to what held us, so that we may serve in the new way of the Spirit and not in the old letter of the law.</p>
-                        <p class="paragraph"><span class="para-num">P5</span><span class="verse-number">7</span> What shall we say then? Is the Law sin? Far from it! On the contrary, I would not have come to know sin except through the Law; for I would not have known about coveting if the Law had not said, "You shall not covet." <span class="verse-number">8</span> But sin, taking an opportunity through the commandment, produced in me coveting of every kind; for apart from the Law sin is dead. <span class="verse-number">9</span> I was once alive apart from the Law; but when the commandment came, sin came to life, and I died; <span class="verse-number">10</span> and this commandment, which was to result in life, proved to result in death for me; <span class="verse-number">11</span> for sin, taking an opportunity through the commandment, deceived me, and through it, killed me.</p>
-                        <p class="paragraph"><span class="para-num">P6</span><span class="bible-version">ESV</span> <span class="verse-number">12</span> So the law is holy, and the commandment is holy and righteous and good. <span class="verse-number">13</span> Therefore did that which is good become a cause of death for me? Far from it! Rather it was sin, in order that it might be shown to be sin by bringing about my death through that which is good, so that through the commandment sin would become utterly sinful.</p>
-                        <p class="paragraph"><span class="para-num">P7</span><span class="verse-number">14</span> For we know that the Law is spiritual, but I am fleshly, sold into bondage to sin. <span class="verse-number">15</span> For I do not understand what I am doing; for I am not practicing what I want to do, but I do the very thing I hate. <span class="verse-number">16</span> However, if I do the very thing I do not want to do, I agree with the Law, that the Law is good. <span class="verse-number">17</span> But now, no longer am I the one doing it, but sin that dwells in me. <span class="verse-number">18</span> For I know that good does not dwell in me, that is, in my flesh; for the willing is present in me, but the doing of the good is not. <span class="verse-number">19</span> For the good that I want, I do not do, but I practice the very evil that I do not want. <span class="verse-number">20</span> But if I do the very thing I do not want, I am no longer the one doing it, but sin that dwells in me.</p>
-                        <p class="paragraph"><span class="para-num">P8</span><span class="verse-number">21</span> I find then the principle that evil is present in me, the one who wants to do good. <span class="verse-number">22</span> For I joyfully agree with the law of God in the inner person, <span class="verse-number">23</span> but I see a different law in the parts of my body waging war against the law of my mind, and making me a prisoner of the law of sin, the law which is in my body's parts. <span class="bible-version">ESV</span> <span class="verse-number">24</span> Wretched man that I am! Who will set me free from this body of death? <span class="verse-number">25</span> Thanks be to God through Jesus Christ our Lord! So then, on the one hand I myself with my mind am serving the law of God, but on the other, with my flesh the law of sin.</p>
-                    </div>
-                </div>
-
-                <div class="chapter-section">
-                    <div class="chapter-header">Chapter 8</div>
-                    <div class="chapter-content">
-                        <p class="paragraph"><span class="para-num">P9</span><span class="verse-number">1</span> Therefore there is now no condemnation at all for those who are in Christ Jesus. <span class="verse-number">2</span> For the law of the Spirit of life in Christ Jesus has set you free from the law of sin and of death. <span class="verse-number">3</span> For what the Law could not do, weak as it was through the flesh, God did: sending His own Son in the likeness of sinful flesh and as an offering for sin, He condemned sin in the flesh, <span class="verse-number">4</span> so that the requirement of the Law might be fulfilled in us who do not walk according to the flesh but according to the Spirit. <span class="verse-number">5</span> For those who are in accord with the flesh set their minds on the things of the flesh, but those who are in accord with the Spirit, the things of the Spirit. <span class="verse-number">6</span> For the mind set on the flesh is death, but the mind set on the Spirit is life and peace, <span class="verse-number">7</span> because the mind set on the flesh is hostile toward God; for it does not subject itself to the law of God, for it is not even able to do so, <span class="verse-number">8</span> and those who are in the flesh cannot please God.</p>
-                        <p class="paragraph"><span class="para-num two-digit">P10</span><span class="verse-number">9</span> However, you are not in the flesh but in the Spirit, if indeed the Spirit of God dwells in you. But if anyone does not have the Spirit of Christ, he does not belong to Him. <span class="verse-number">10</span> If Christ is in you, though the body is dead because of sin, yet the spirit is alive because of righteousness. <span class="verse-number">11</span> But if the Spirit of Him who raised Jesus from the dead dwells in you, He who raised Christ Jesus from the dead will also give life to your mortal bodies through His Spirit who dwells in you.</p>
-                        <p class="paragraph"><span class="para-num two-digit">P11</span><span class="verse-number">12</span> So then, brothers and sisters, we are under obligation, not to the flesh, to live according to the flesh— <span class="verse-number">13</span> for if you are living in accord with the flesh, you are going to die; but if by the Spirit you are putting to death the deeds of the body, you will live. <span class="verse-number">14</span> For all who are being led by the Spirit of God, these are sons and daughters of God. <span class="verse-number">15</span> For you have not received a spirit of slavery leading to fear again, but you have received a spirit of adoption as sons and daughters by which we cry out, "Abba! Father!" <span class="verse-number">16</span> The Spirit Himself testifies with our spirit that we are children of God, <span class="verse-number">17</span> and if children, heirs also, heirs of God and fellow heirs with Christ, if indeed we suffer with Him so that we may also be glorified with Him.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <script>
-        document.querySelectorAll('.chapter-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const content = header.nextElementSibling;
-                const isCollapsed = header.classList.contains('collapsed');
+    <!-- Question 2 -->
+    <div class="list-item">
+      <button class="list-header">2. How do you know when you've encountered a principle in scripture? Structurally, what does it have that lets you know that it is something to be applied?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>it presents a choice/statement and an outcome</li>
+            <li>any parable of Jesus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-                if (isCollapsed) {
-                    content.style.display = 'block';
-                    header.classList.remove('collapsed');
-                } else {
-                    content.style.display = 'none';
-                    header.classList.add('collapsed');
-                }
-            });
-        });
+    <!-- Question 3 -->
+    <div class="list-item">
+      <button class="list-header">3. What's the difference between a principle and a commandment? (Pretty)</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Commandment is an instruction by itself. Principle helps to understand the heart of the matter.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-        // Initialize all chapters to be open
-        document.querySelectorAll('.chapter-header').forEach(header => {
-            header.nextElementSibling.style.display = 'block';
-        });
-        const rightColumn = document.getElementById('right-column');
-const chapterHeaders = document.querySelectorAll('.chapter-header');
-const chapterSections = document.querySelectorAll('.chapter-section');
+    <!-- Question 4 -->
+    <div class="list-item">
+      <button class="list-header">4. What other words/modern day words can we use in place of commandment?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Law</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-rightColumn.addEventListener('scroll', () => {
+    <!-- Question 5 -->
+    <div class="list-item">
+      <button class="list-header">5. Do principles apply to everyone?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Yes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="list-item">
+      <button class="list-header">6. What is the reason to follow or pay attention to/respect a principle?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>They bring (expected) results</li>
+            <li>perception vs. truth (Tab)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="list-item">
+      <button class="list-header">7. Do principles inherently have a specific type of outcome, i.e., good or bad? favorable or unfavorable? For instance can a principle describe what is done to have a poor outcome?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>No.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="list-item">
+      <button class="list-header">8. Which book, in your opinion, has the most principles?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Proverbs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="list-item">
+      <button class="list-header">9. Are there any principles in the text that we've read so far?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>You become a slave to the one you obey (Romans 6:16)</li>
+            <li>The wages of sin is death (Romans 6:23)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="list-item">
+      <button class="list-header">10. What is a law?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>A rule</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="list-item">
+      <button class="list-header">11. What basic actions can individuals take in response to a law?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>obey</li>
+            <li>break</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="list-item">
+      <button class="list-header">12. In this scripture, what is Paul referring to when he says "The law"?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Law given by Moses and Levitical law</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="list-item">
+      <button class="list-header">13. How do you know from this passage?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>He references one of the 10 commandments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="list-item">
+      <button class="list-header">14. What is the state of sin before the law is given? (Romans 7:8)</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>Sin is dead</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="list-item">
+      <button class="list-header">15. What is sin?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>the act of disobeying God</li>
+            <li>the symptom of unbelief</li>
+            <li>a state that every man is born into since the fall (Genesis/Adam and Eve)</li>
+            <li>Emerging question: Was Jesus born in sin? (Pretty)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="list-item">
+      <button class="list-header">16. What does it mean to sin?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li>To disobey. To do the opposite of what God says</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="list-item">
+      <button class="list-header">17. In paragraph 5, what is Paul referring to when he is using the word sin?</button>
+      <div class="list-content">
+        <div class="inner-text">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="list-item">
+      <button class="list-header">18. When the command comes, what does sin do to the person first?</button>
+      <div class="list-content">
+        <div class="inner-text">
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="list-item">
+      <button class="list-header">19. What is the law used to produce in a person?</button>
+      <div class="list-content">
+        <div class="inner-text">
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="list-item">
+      <button class="list-header">20. What uses the commandment to produce the desire to sin?</button>
+      <div class="list-content">
+        <div class="inner-text">
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 21 -->
+    <div class="list-item">
+      <button class="list-header">21. Who caused the spirit to die?</button>
+      <div class="list-content">
+        <div class="inner-text">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      <div class="column" id="right-column">
+        <div class="content">
+          <h2>Reading</h2>
+          <h3>Romans 6:16-8:17</h3>
+          <div class="chapter-section">
+            <div class="chapter-header">Chapter 6</div>
+            <div class="chapter-content">
+              <p class="paragraph">
+                <span class="para-num">P1</span>
+                <span class="bible-version">NIV</span>
+                <span class="verse-number">16</span> Don't you know that when you offer yourselves to someone as obedient slaves, you are slaves of the one you obey—whether you are slaves to sin, which leads to death, or to obedience, which leads to righteousness?
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P1</span>
+                <span class="verse-number">17</span> But thanks be to God that, though you used to be slaves to sin, you have come to obey from your heart the pattern of teaching that has now claimed your allegiance.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P1</span>
+                <span class="verse-number">18</span> You have been set free from sin and have become slaves to righteousness.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P2</span>
+                <span class="bible-version">NASB</span>
+                <span class="verse-number">19</span> I am speaking in human terms because of the weakness of your flesh. For just as you presented the parts of your body as slaves to impurity and to lawlessness, resulting in further lawlessness, so now present your body's parts as slaves to righteousness, resulting in sanctification.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P2</span>
+                <span class="verse-number">20</span> When you were slaves to sin, you were free from the control of righteousness.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P2</span>
+                <span class="verse-number">21</span> What benefit did you reap at that time from the things you are now ashamed of? Those things result in death!
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P2</span>
+                <span class="verse-number">22</span> But now that you have been set free from sin and have become slaves of God, the benefit you reap leads to holiness, and the result is eternal life.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P2</span>
+                <span class="verse-number">23</span> For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.
+              </p>
+            </div>
+          </div>
+          <div class="chapter-section">
+            <div class="chapter-header">Chapter 7</div>
+            <div class="chapter-content">
+              <p class="paragraph">
+                <span class="para-num">P3</span>
+                <span class="verse-number">1</span> Do you not know, brothers and sisters—for I am speaking to those who know the law—that the law has authority over someone only as long as that person lives?
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P3</span>
+                <span class="verse-number">2</span> For example, by law a married woman is bound to her husband as long as he is alive, but if her husband dies, she is released from the law that binds her to him.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P3</span>
+                <span class="verse-number">3</span> So then, if she has sexual relations with another man while her husband is still alive, she is called an adulteress. But if her husband dies, she is released from that law and is not an adulteress if she marries another man.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P4</span>
+                <span class="verse-number">4</span> So, my brothers and sisters, you also died to the law through the body of Christ, that you might belong to another, to him who was raised from the dead, in order that we might bear fruit for God.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P4</span>
+                <span class="bible-version">HCSB</span>
+                <span class="verse-number">5</span> For when we were in the flesh, the sinful passions operated through the law in every part of us and bore fruit for death.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P4</span>
+                <span class="verse-number">6</span> But now we have been released from the law, since we have died to what held us, so that we may serve in the new way of the Spirit and not in the old letter of the law.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P5</span>
+                <span class="verse-number">7</span> What shall we say then? Is the Law sin? Far from it! On the contrary, I would not have come to know sin except through the Law; for I would not have known about coveting if the Law had not said, "You shall not covet."
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P5</span>
+                <span class="verse-number">8</span> But sin, taking an opportunity through the commandment, produced in me coveting of every kind; for apart from the Law sin is dead.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P5</span>
+                <span class="verse-number">9</span> I was once alive apart from the Law; but when the commandment came, sin came to life, and I died;
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P5</span>
+                <span class="verse-number">10</span> and this commandment, which was to result in life, proved to result in death for me;
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P5</span>
+                <span class="verse-number">11</span> for sin, taking an opportunity through the commandment, deceived me, and through it, killed me.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P6</span>
+                <span class="bible-version">ESV</span>
+                <span class="verse-number">12</span> So the law is holy, and the commandment is holy and righteous and good.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P6</span>
+                <span class="verse-number">13</span> Therefore did that which is good become a cause of death for me? Far from it! Rather it was sin, in order that it might be shown to be sin by bringing about my death through that which is good, so that through the commandment sin would become utterly sinful.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">14</span> For we know that the Law is spiritual, but I am fleshly, sold into bondage to sin.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">15</span> For I do not understand what I am doing; for I am not practicing what I want to do, but I do the very thing I hate.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">16</span> However, if I do the very thing I do not want to do, I agree with the Law, that the Law is good.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">17</span> But now, no longer am I the one doing it, but sin that dwells in me.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">18</span> For I know that good does not dwell in me, that is, in my flesh; for the willing is present in me, but the doing of the good is not.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">19</span> For the good that I want, I do not do, but I practice the very evil that I do not want.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P7</span>
+                <span class="verse-number">20</span> But if I do the very thing I do not want, I am no longer the one doing it, but sin that dwells in me.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P8</span>
+                <span class="verse-number">21</span> I find then the principle that evil is present in me, the one who wants to do good.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P8</span>
+                <span class="verse-number">22</span> For I joyfully agree with the law of God in the inner person,
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P8</span>
+                <span class="verse-number">23</span> but I see a different law in the parts of my body waging war against the law of my mind, and making me a prisoner of the law of sin, the law which is in my body's parts.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P8</span>
+                <span class="verse-number">24</span> Wretched man that I am! Who will set me free from this body of death?
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P8</span>
+                <span class="verse-number">25</span> Thanks be to God through Jesus Christ our Lord! So then, on the one hand I myself with my mind am serving the law of God, but on the other, with my flesh the law of sin.
+              </p>
+            </div>
+          </div>
+          <div class="chapter-section">
+            <div class="chapter-header">Chapter 8</div>
+            <div class="chapter-content">
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">1</span> Therefore there is now no condemnation at all for those who are in Christ Jesus.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">2</span> For the law of the Spirit of life in Christ Jesus has set you free from the law of sin and of death.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">3</span> For what the Law could not do, weak as it was through the flesh, God did: sending His own Son in the likeness of sinful flesh and as an offering for sin, He condemned sin in the flesh,
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">4</span> so that the requirement of the Law might be fulfilled in us who do not walk according to the flesh but according to the Spirit.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">5</span> For those who are in accord with the flesh set their minds on the things of the flesh, but those who are in accord with the Spirit, the things of the Spirit.
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">6</span> For the mind set on the flesh is death, but the mind set on the Spirit is life and peace,
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">7</span> because the mind set on the flesh is hostile toward God; for it does not subject itself to the law of God, for it is not even able to do so,
+              </p>
+              <p class="paragraph">
+                <span class="para-num">P9</span>
+                <span class="verse-number">8</span> and those who are in the flesh cannot please God.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P10</span>
+                <span class="verse-number">9</span> However, you are not in the flesh but in the Spirit, if indeed the Spirit of God dwells in you. But if anyone does not have the Spirit of Christ, he does not belong to Him.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P10</span>
+                <span class="verse-number">10</span> If Christ is in you, though the body is dead because of sin, yet the spirit is alive because of righteousness.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P10</span>
+                <span class="verse-number">11</span> But if the Spirit of Him who raised Jesus from the dead dwells in you, He who raised Christ Jesus from the dead will also give life to your mortal bodies through His Spirit who dwells in you.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">12</span> So then, brothers and sisters, we are under obligation, not to the flesh, to live according to the flesh—
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">13</span> for if you are living in accord with the flesh, you are going to die; but if by the Spirit you are putting to death the deeds of the body, you will live.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">14</span> For all who are being led by the Spirit of God, these are sons and daughters of God.
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">15</span> For you have not received a spirit of slavery leading to fear again, but you have received a spirit of adoption as sons and daughters by which we cry out, "Abba! Father!"
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">16</span> The Spirit Himself testifies with our spirit that we are children of God,
+              </p>
+              <p class="paragraph">
+                <span class="para-num two-digit">P11</span>
+                <span class="verse-number">17</span> and if children, heirs also, heirs of God and fellow heirs with Christ, if indeed we suffer with Him so that we may also be glorified with Him.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Toggle All Questions Button
+  const toggleAllButton = document.getElementById('toggle-all-questions');
+  const questionHeaders = document.querySelectorAll('.list-header');
+
+// Add 'has-answer' class to headers with answers
+document.querySelectorAll('.list-header').forEach(header => {
+  const nextContent = header.nextElementSibling;
+  if (nextContent && nextContent.querySelector('ul')) {
+    header.classList.add('has-answer');
+  }
+});
+
+  toggleAllButton.addEventListener('click', function() {
+    const isAnyCollapsed = Array.from(questionHeaders).some(header => {
+      const content = header.nextElementSibling;
+      return !content.style.maxHeight || content.style.maxHeight === '0px';
+    });
+
+    questionHeaders.forEach(header => {
+      const content = header.nextElementSibling;
+      if (isAnyCollapsed) {
+        // Expand all
+        content.style.maxHeight = content.scrollHeight + "px";
+        header.classList.add('active');
+      } else {
+        // Collapse all
+        content.style.maxHeight = null;
+        header.classList.remove('active');
+      }
+    });
+  });
+
+  // Initialize collapsible lists for questions
+  questionHeaders.forEach(header => {
+    header.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+  // Initialize all chapters as expanded
+  const chapterHeaders = document.querySelectorAll('.chapter-header');
+  chapterHeaders.forEach(header => {
+    header.nextElementSibling.style.display = 'block';
+    header.classList.remove('collapsed');
+  });
+
+  // Collapsible Chapter Sections
+  chapterHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const isCollapsed = header.classList.contains('collapsed');
+      if (isCollapsed) {
+        content.style.display = 'block';
+        header.classList.remove('collapsed');
+      } else {
+        content.style.display = 'none';
+        header.classList.add('collapsed');
+      }
+    });
+  });
+
+  // Sticky Chapter Headers
+  const rightColumn = document.getElementById('right-column');
+  rightColumn.addEventListener('scroll', () => {
     let currentStickyIndex = -1;
-
+    const chapterSections = document.querySelectorAll('.chapter-section');
     chapterSections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
-        const rightColumnRect = rightColumn.getBoundingClientRect();
-
-        // Calculate offset relative to the scroll container
-        const offsetTop = rect.top - rightColumnRect.top;
-
-        // If the top of the section is at or above the top of the container, mark it as current
-        if (offsetTop <= 0) {
-            currentStickyIndex = index;
-        }
+      const rect = section.getBoundingClientRect();
+      const rightColumnRect = rightColumn.getBoundingClientRect();
+      const offsetTop = rect.top - rightColumnRect.top;
+      if (offsetTop <= 0) {
+        currentStickyIndex = index;
+      }
     });
 
     chapterHeaders.forEach((header, index) => {
-        if (index === currentStickyIndex) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
+      if (index === currentStickyIndex) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
     });
+  });
 });
 
-    </script>
+  </script>
 </body>
 </html>
