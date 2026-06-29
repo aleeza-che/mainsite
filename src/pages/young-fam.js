@@ -49,7 +49,7 @@ const SecondPage = () => (
 
 
             <Accordion.Header>
-                  Tuesday, June 16, 2026 - Proverbs 4-6 / Proverbs 7
+                  Tuesday, June 30, 2026 - Proverbs 4-6 / Proverbs 7
             </Accordion.Header>
 
             <Accordion.Body>
