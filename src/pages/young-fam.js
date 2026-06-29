@@ -47,11 +47,35 @@ const SecondPage = () => (
 <Accordion>
       <Accordion.Item>
 
+
+            <Accordion.Header>
+                  Tuesday, June 16, 2026 - Proverbs 4-6 / Proverbs 7
+            </Accordion.Header>
+
+            <Accordion.Body>
+
+
+
+                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%204-6&version=NLT;WEB;CJB" target="_blank">Proverbs 4-6</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%207&version=NLT;WEB;CJB" target="_blank">Proverbs 7</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+
+
             <Accordion.Header>
                   Tuesday, June 16, 2026 - Psalm 127, Proverbs 1-2 / Proverbs 3
             </Accordion.Header>
 
             <Accordion.Body>
+
 
 
                   <Link to="https://www.biblegateway.com/passage/?search=Psalm%20127%2C%20Proverbs%201-2&version=NLT;WEB;CJB" target="_blank">Psalm 127, Proverbs 1-2</Link><br/>
