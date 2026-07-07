@@ -48,9 +48,35 @@ const SecondPage = () => (
       <Accordion.Item>
 
 
+
+            <Accordion.Header>
+                  Tuesday, July 7, 2026 - Proverbs 8-10 / Proverbs 11
+            </Accordion.Header>
+
+
+            <Accordion.Body>
+
+
+
+                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%208-10&version=NLT;WEB;CJB" target="_blank">Proverbs 8-10</Link><br/>
+
+                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2011&version=NLT;WEB;CJB" target="_blank">Proverbs 11</Link>
+
+            </Accordion.Body>
+      </Accordion.Item>
+</Accordion>
+
+
+
+<Accordion>
+      <Accordion.Item eventKey="0">
+
+
+
             <Accordion.Header>
                   Tuesday, June 30, 2026 - Proverbs 4-6 / Proverbs 7
             </Accordion.Header>
+
 
             <Accordion.Body>
 
@@ -63,6 +89,7 @@ const SecondPage = () => (
             </Accordion.Body>
       </Accordion.Item>
 </Accordion>
+
 
 
 
