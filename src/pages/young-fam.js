@@ -45,25 +45,43 @@ const SecondPage = () => (
 <div class="summaries">
 
 <Accordion>
-      <Accordion.Item>
+
+    <Accordion.Item>
+        
+        <Accordion.Header>
+            Tuesday, July 14, 2026 - Proverbs 12-14 / Proverbs 15
+        </Accordion.Header>
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2012-14&version=NLT;WEB;CJB" target="_blank">Proverbs 12-14</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2015&version=NLT;WEB;CJB" target="_blank">Proverbs 15</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
 
 
 
-            <Accordion.Header>
-                  Tuesday, July 7, 2026 - Proverbs 8-10 / Proverbs 11
-            </Accordion.Header>
+<Accordion>
 
+    <Accordion.Item eventKey="0">
+        
+        <Accordion.Header>
+            Tuesday, July 7, 2026 - Proverbs 8-10 / Proverbs 11
+        </Accordion.Header>
 
-            <Accordion.Body>
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%208-10&version=NLT;WEB;CJB" target="_blank">Proverbs 8-10</Link><br/>
 
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2011&version=NLT;WEB;CJB" target="_blank">Proverbs 11</Link>
 
+        </Accordion.Body>
 
-                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%208-10&version=NLT;WEB;CJB" target="_blank">Proverbs 8-10</Link><br/>
+    </Accordion.Item>
 
-                  <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2011&version=NLT;WEB;CJB" target="_blank">Proverbs 11</Link>
-
-            </Accordion.Body>
-      </Accordion.Item>
 </Accordion>
 
 
