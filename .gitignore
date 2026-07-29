@@ -68,3 +68,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 static/th4/spring2026/index.txt
+static/th4/spring2026/.*
