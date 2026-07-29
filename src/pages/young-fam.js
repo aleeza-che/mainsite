@@ -50,8 +50,33 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
+            Tuesday, August 4, 2026 - Proverbs 24-26 / Proverbs 27
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2024-26&version=NLT;WEB;CJB" target="_blank">Proverbs 24-26</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2027&version=NLT;WEB;CJB" target="_blank">Proverbs 27</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+
+<Accordion>
+
+    <Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
             Tuesday, July 28, 2026 - Proverbs 20-22 / Proverbs 23
         </Accordion.Header>
+
 
 
         <Accordion.Body>
@@ -64,6 +89,7 @@ const SecondPage = () => (
     </Accordion.Item>
 
 </Accordion>
+
 
 
 <Accordion>
