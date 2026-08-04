@@ -50,6 +50,29 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
+            Tuesday, August 11, 2026 - Proverbs 28-30 / Proverbs 31
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2028-30&version=NLT;WEB;CJB" target="_blank">Proverbs 28-30</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=Proverbs%2031&version=NLT;WEB;CJB" target="_blank">Proverbs 31</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+<Accordion>
+
+    <Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
             Tuesday, August 4, 2026 - Proverbs 24-26 / Proverbs 27
         </Accordion.Header>
 
