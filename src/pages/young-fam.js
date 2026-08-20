@@ -44,9 +44,55 @@ const SecondPage = () => (
 
 <div class="summaries">
 
+
 <Accordion>
 
     <Accordion.Item>
+
+        
+        <Accordion.Header>
+            Tuesday, August 25, 2026 - Song of Solomon 4-6 / Song of Solomon 7
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Song%20of%20solomon%204-6&version=NLT;WEB;CJB" target="_blank">Song of Solomon 4-6</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=Song%20of%20solomon%207&version=NLT;WEB;CJB" target="_blank">Song of Solomon 7</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+<Accordion>
+
+    <Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
+            Tuesday, August 18, 2026 - Song of Solomon 1-3 (Read Together)
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=Song%20of%20solomon%201-3&version=NLT;WEB;CJB" target="_blank">Song of Solomon 1-3</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+
+<Accordion>
+
+    <Accordion.Item eventKey="0">
 
         
         <Accordion.Header>
