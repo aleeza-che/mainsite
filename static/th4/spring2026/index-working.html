@@ -26,6 +26,7 @@
             display: flex;
             flex: 1;
             overflow: hidden;
+            min-height: 0; /* This is crucial for flex children to respect resizing */
         }
 
         .column {
@@ -34,8 +35,8 @@
             overflow-y: auto;
             background-color: #f1f1f1;
             border-right: 1px solid #ccc;
-            resize: horizontal;
             min-width: 100px;
+            position: relative;
         }
 
         .column:last-child {
@@ -45,6 +46,22 @@
         .column h2 {
             margin-top: 0;
         }
+
+        /* Add a resizer element */
+        .resizer {
+            width: 5px;
+            background-color: #888;
+            cursor: col-resize;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .column:hover .resizer {
+            background-color: #4CAF50;
+        }
     </style>
 </head>
 <body>
@@ -53,17 +70,47 @@
     </header>
 
     <div class="container">
-        <div class="column">
+        <div class="column" id="column1">
+            <div class="resizer"></div>
             <h2>Column 1</h2>
-            <p>This is the first column. You can drag the right edge to resize it.</p>
+            <p>This is the first column. Drag the right edge to resize it.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
         </div>
 
-        <div class="column">
+        <div class="column" id="column2">
             <h2>Column 2</h2>
-            <p>This is the second column. You can drag the left edge to resize it.</p>
+            <p>This is the second column. Drag the left edge to resize it.</p>
             <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const resizer = document.querySelector('.resizer');
+            const leftColumn = document.getElementById('column1');
+            const rightColumn = document.getElementById('column2');
+            let startX, startWidth;
+
+            resizer.addEventListener('mousedown', function(e) {
+                startX = e.clientX;
+                startWidth = leftColumn.offsetWidth;
+                document.addEventListener('mousemove', resize);
+                document.addEventListener('mouseup', stopResize);
+            });
+
+            function resize(e) {
+                const width = startWidth + (e.clientX - startX);
+                if (width > 100) { // Minimum width for left column
+                    leftColumn.style.flex = `0 0 ${width}px`;
+                    rightColumn.style.flex = `1 0 calc(100% - ${width}px)`;
+                }
+            }
+
+            function stopResize() {
+                document.removeEventListener('mousemove', resize);
+                document.removeEventListener('mouseup', stopResize);
+            }
+        });
+    </script>
 </body>
 </html>
