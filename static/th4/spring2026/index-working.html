@@ -106,6 +106,11 @@ button {
       font-weight:400;
       line-height: 3.2rem;
     }
+.content button {
+  font: inherit;
+  /* Or at minimum: */
+  /* font-size: inherit; */
+}
 
     .column::-webkit-scrollbar {
       width: 6px;
@@ -339,6 +344,10 @@ button {
 
     <div class="container">
         <div class="column" id="column1">
+            <div class="questions-header">
+            <h2>Questions</h2>
+            <button id="toggle-all-questions">Toggle All</button>
+        </div>
                         <div class="content">
  <div class="font-controls">
       <button onclick="adjustFontSize('column1', 'decrease')">-</button>
@@ -346,10 +355,7 @@ button {
       <button onclick="adjustFontSize('column1', 'increase')">+</button>
     </div>
             <div class="resizer"></div>
-              <div class="questions-header">
-            <h2>Questions</h2>
-            <button id="toggle-all-questions">Toggle All</button>
-        </div>
+            
   <div class="collapsible-list">
 
             <!-- Question 1 -->
@@ -698,6 +704,8 @@ button {
 </div>
 
         <div class="column" id="column2">
+          <h2>Reading</h2>
+          <h3>Romans 6:16-8:17</h3>
             <div class="content">
 
                  <div class="font-controls">
@@ -705,8 +713,7 @@ button {
       <button onclick="adjustFontSize('column2', 'reset')">Reset</button>
       <button onclick="adjustFontSize('column2', 'increase')">+</button>
     </div>
-          <h2>Reading</h2>
-          <h3>Romans 6:16-8:17</h3>
+          
           <div class="chapter-section">
             <div class="chapter-header">Chapter 6</div>
             <div class="chapter-content">
@@ -813,34 +820,58 @@ button {
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const resizer = document.querySelector('.resizer');
-            const leftColumn = document.getElementById('column1');
-            const rightColumn = document.getElementById('column2');
-            let startX, startWidth;
+    <style>
+  .resizer {
+    touch-action: none; /* Prevents scrolling while dragging */
+    cursor: col-resize;
+  }
+</style>
 
-            resizer.addEventListener('mousedown', function(e) {
-                startX = e.clientX;
-                startWidth = leftColumn.offsetWidth;
-                document.addEventListener('mousemove', resize);
-                document.addEventListener('mouseup', stopResize);
-            });
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const resizer = document.querySelector('.resizer');
+  const leftColumn = document.getElementById('column1');
+  const rightColumn = document.getElementById('column2');
 
-            function resize(e) {
-                const width = startWidth + (e.clientX - startX);
-                if (width > 100) { // Minimum width for left column
-                    leftColumn.style.flex = `0 0 ${width}px`;
-                    rightColumn.style.flex = `1 0 calc(90% - ${width}px)`;
-                }
-            }
+  let startX;
+  let startWidth;
 
-            function stopResize() {
-                document.removeEventListener('mousemove', resize);
-                document.removeEventListener('mouseup', stopResize);
-            }
-        });
-    </script>
+  resizer.addEventListener('pointerdown', (event) => {
+    event.preventDefault();
+
+    startX = event.clientX;
+    startWidth = leftColumn.offsetWidth;
+
+    // Keeps receiving pointer events even if the pointer moves away
+    resizer.setPointerCapture(event.pointerId);
+
+    resizer.addEventListener('pointermove', resize);
+    resizer.addEventListener('pointerup', stopResize);
+    resizer.addEventListener('pointercancel', stopResize);
+  });
+
+  function resize(event) {
+    const width = startWidth + (event.clientX - startX);
+    const minimumWidth = 100;
+
+    if (width >= minimumWidth) {
+      leftColumn.style.flex = `0 0 ${width}px`;
+      rightColumn.style.flex = `1 1 auto`;
+    }
+  }
+
+  function stopResize(event) {
+    if (event.pointerId !== undefined) {
+      resizer.releasePointerCapture(event.pointerId);
+    }
+
+    resizer.removeEventListener('pointermove', resize);
+    resizer.removeEventListener('pointerup', stopResize);
+    resizer.removeEventListener('pointercancel', stopResize);
+  }
+});
+</script>
+
 
       <script>
 document.addEventListener('DOMContentLoaded', function() {
