@@ -59,7 +59,7 @@ const SecondPage = () => (
         <Accordion.Body>
             <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2012-14&version=NLT;WEB;CJB" target="_blank">1 Kings 12-14</Link><br/>
 
-            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2015&version=NLT;WEB;CJB" target="_blank">1 Kings 11</Link>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2015&version=NLT;WEB;CJB" target="_blank">1 Kings 15</Link>
 
         </Accordion.Body>
 
