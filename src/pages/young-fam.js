@@ -51,7 +51,29 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
-            Tuesday, August 25, 2026 - Song of Solomon 8, 1 Kings 9-10 / 1 Kings 11
+            Tuesday, September 8, 2026 - 1 Kings 12-14 / 1 Kings 15
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2012-14&version=NLT;WEB;CJB" target="_blank">1 Kings 12-14</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2015&version=NLT;WEB;CJB" target="_blank">1 Kings 11</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+<Accordion>
+
+    <Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
+            Tuesday, September 1, 2026 - Song of Solomon 8, 1 Kings 9-10 / 1 Kings 11
         </Accordion.Header>
 
 
