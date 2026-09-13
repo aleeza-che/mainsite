@@ -47,7 +47,27 @@ const SecondPage = () => (
 
 <Accordion>
 
-    <Accordion.Item>
+<Accordion.Item>
+
+        
+        <Accordion.Header>
+            Tuesday, September 15, 2026 - 1 Kings 16-18 / 1 Kings 19
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2016-18&version=NLT;WEB;CJB" target="_blank">1 Kings 16-18</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2019&version=NLT;WEB;CJB" target="_blank">1 Kings 19</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+    <Accordion.Item eventKey="0">
 
         
         <Accordion.Header>
