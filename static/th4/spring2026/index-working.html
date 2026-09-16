@@ -32,14 +32,39 @@
                       background-color: #ffffff;
 
         }
+h1 {
+    font-size: 22px;
+}
 
+h3 {
+    font-size: 33px;
+}
 
-        .container {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
-            min-height: 0; /* This is crucial for flex children to respect resizing */
-        }
+button {
+      padding-block: 0;
+    padding-inline: 0;
+}
+
+       .container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    position: relative;
+}
+
+.resizer {
+    flex: 0 0 15px;
+    width: 15px;
+    background-color: #888;
+    cursor: col-resize;
+    z-index: 100;
+    touch-action: none;
+}
+
+.resizer:hover {
+    background-color: #efcb03;
+}
         .content h2 {
     margin: 16px 0 8px 0;
     font-size: 1.4em;
@@ -49,7 +74,6 @@
 
         .column {
             flex: 1;
-            padding: 1rem;
             overflow-y: auto;
             border-right: 1px solid #ccc;
             min-width: 100px;
@@ -66,21 +90,7 @@
             margin-top: 0;
         }
 
-        /* Add a resizer element */
-        .resizer {
-            width: 5px;
-            background-color: #888;
-            cursor: col-resize;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .column:hover .resizer {
-            background-color: #efcb03;
-        }
+      
 .questions-header {
     position: sticky;
     top: -16px;
@@ -91,15 +101,58 @@
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
     z-index: 20;
+
+    transition:
+        padding 0.2s ease,
+        font-size 0.2s ease;
 }
-        #toggle-all-questions {
-  font-size: 0.5em;
-  padding: 8px 12px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
+
+.questions-header h2 {
+    transition: font-size 0.2s ease;
 }
+
+.questions-header button {
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+/* Compact version after scrolling */
+.questions-header {
+    position: sticky;
+    top: -16px;
+    height: 74px;
+    padding: 26px 0 16px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.questions-header h2 {
+    margin: 0;
+    font-size: 1em;
+    transform-origin: left center;
+    transition: transform 0.25s ease;
+}
+
+.questions-header button {
+    transition: transform 0.25s ease;
+}
+
+.questions-header.scrolled h2, .questions-header.scrolled h3 {
+    transform: scale(0.7);
+}
+
+.questions-header.scrolled button {
+    transform: scale(0.75);
+    font-weight: bold;
+}
+ 
+ #column2 .questions-header {
+  margin-bottom: 30px;
+ }
 
 button {
       font-size: 2.4rem;
@@ -111,7 +164,20 @@ button {
   /* Or at minimum: */
   /* font-size: inherit; */
 }
+button a {
+display: contents;
+    
+}
 
+#toggle-all-questions {
+    font-size: 0.5em;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: .3vw;
+        line-height: 20px;
+}
     .column::-webkit-scrollbar {
       width: 6px;
     }
@@ -193,7 +259,9 @@ button {
     .chapter-header.collapsed::before {
       content: "▶ ";
     }
-
+.chapter-header.sticky {
+    cursor: default;
+}
     .chapter-content {
       padding-left: 20px;
     }
@@ -223,7 +291,7 @@ button {
     }
 
     .paragraph .two-digit {
-      margin-left: -70px;
+      margin-left: -50px;
       margin-right: 57px;
     }
 
@@ -232,18 +300,21 @@ button {
     }
 
     .chapter-header.sticky {
-      position: sticky;
-      top: 0;
-      background-color: #ffffff;
-      z-index: 10;
-      padding: 10px 0;
-      border-bottom: 1px solid #ccc;
-      color: #2d2d2d;
-      margin-left: -40px;
-      width: calc(100% + 80px);
-    }
+    position: sticky;
+    top: 53px;
+    background-color: #ffffff;
+    z-index: 99;
+    padding: 10px 42px;
+    border-bottom: 1px solid #ccc;
+    color: #2d2d2d;
+    margin-left: -40px;
+    width: calc(100% + 80px);
+}
 
-
+.chapter-header.sticky::before {
+    content: "";
+    display: none;
+}
 
 /* Container styling */
 .collapsible-list {
@@ -319,22 +390,25 @@ button {
   z-index: 10;
   display: flex;
   gap: 8px;
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .font-controls button {
-  padding: 4px 8px;
+  padding: .3vw;
   font-size: 1rem;
   cursor: pointer;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 4px;
+  line-height: 20px;
 }
 
 .font-controls button:hover {
   background-color: #e0e0e0;
 }
 
+#column2 .content {
+    margin-left: 25px;
+}
     </style>
 </head>
 <body>
@@ -343,18 +417,20 @@ button {
     </header>
 
     <div class="container">
+
         <div class="column" id="column1">
+
             <div class="questions-header">
             <h2>Questions</h2>
-            <button id="toggle-all-questions">Toggle All</button>
-        </div>
-                        <div class="content">
- <div class="font-controls">
+            <button id="toggle-all-questions">Toggle All Questions</button>
+             <div class="font-controls">
       <button onclick="adjustFontSize('column1', 'decrease')">-</button>
-      <button onclick="adjustFontSize('column1', 'reset')">Reset</button>
+      <button onclick="adjustFontSize('column1', 'reset')">Reset Font Size</button>
       <button onclick="adjustFontSize('column1', 'increase')">+</button>
     </div>
-            <div class="resizer"></div>
+        </div>
+                        <div class="content">
+
             
   <div class="collapsible-list">
 
@@ -664,7 +740,7 @@ button {
 
 <!-- Question 26 -->
     <div class="list-item">
-      <button class="list-header">26. In this scenario that Paul is explaining in paragraph 5 (P5/ch7:7), did he obey the commandment from God?</button>
+      <button class="list-header">26. In this scenario that Paul is explaining in <a href="#p5">paragraph 5 (P5/ch7:7)</a>, did he obey the commandment from God?</button>
       <div class="list-content">
         <div class="inner-text">
         </div>
@@ -702,17 +778,21 @@ button {
 </div>
 
 </div>
+                            <div class="resizer"></div>
 
         <div class="column" id="column2">
+          <div class="questions-header">
           <h2>Reading</h2>
           <h3>Romans 6:16-8:17</h3>
-            <div class="content">
-
-                 <div class="font-controls">
+          <div class="font-controls">
       <button onclick="adjustFontSize('column2', 'decrease')">-</button>
-      <button onclick="adjustFontSize('column2', 'reset')">Reset</button>
+      <button onclick="adjustFontSize('column2', 'reset')">Reset Font Size</button>
       <button onclick="adjustFontSize('column2', 'increase')">+</button>
     </div>
+        </div>
+            <div class="content">
+
+                 
           
           <div class="chapter-section">
             <div class="chapter-header">Chapter 6</div>
@@ -752,7 +832,7 @@ button {
                 <span class="verse-number">6</span> But now we have been released from the law, since we have died to what held us, so that we may serve in the new way of the Spirit and not in the old letter of the law.
               </p>
               <p class="paragraph">
-                <span class="para-num">P5</span>
+                <span class="para-num" id="p5" style="scroll-margin-top: 160px;">P5</span>
                 <span class="verse-number">7</span> What shall we say then? Is the Law sin? Far from it! On the contrary, I would not have come to know sin except through the Law; for I would not have known about coveting if the Law had not said, "You shall not covet."
                 <span class="verse-number">8</span> But sin, taking an opportunity through the commandment, produced in me coveting of every kind; for apart from the Law sin is dead.
                 <span class="verse-number">9</span> I was once alive apart from the Law; but when the commandment came, sin came to life, and I died;
@@ -820,12 +900,6 @@ button {
         </div>
     </div>
 
-    <style>
-  .resizer {
-    touch-action: none; /* Prevents scrolling while dragging */
-    cursor: col-resize;
-  }
-</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -870,6 +944,20 @@ document.addEventListener('DOMContentLoaded', () => {
     resizer.removeEventListener('pointercancel', stopResize);
   }
 });
+
+function setupShrinkingHeader(columnId) {
+  const column = document.getElementById(columnId);
+  const header = column.querySelector('.questions-header');
+
+  if (!column || !header) return;
+
+  column.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', column.scrollTop > 20);
+  });
+}
+
+setupShrinkingHeader('column1');
+setupShrinkingHeader('column2');
 </script>
 
 
@@ -929,21 +1017,27 @@ document.querySelectorAll('.list-header').forEach(header => {
 
   // Collapsible Chapter Sections
   chapterHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-      const content = header.nextElementSibling;
-      const isCollapsed = header.classList.contains('collapsed');
-      if (isCollapsed) {
-        content.style.display = 'block';
-        header.classList.remove('collapsed');
-      } else {
-        content.style.display = 'none';
-        header.classList.add('collapsed');
-      }
-    });
+  header.addEventListener('click', () => {
+    // Do not allow a sticky chapter heading to collapse
+    if (header.classList.contains('sticky')) {
+      return;
+    }
+
+    const content = header.nextElementSibling;
+    const isCollapsed = header.classList.contains('collapsed');
+
+    if (isCollapsed) {
+      content.style.display = 'block';
+      header.classList.remove('collapsed');
+    } else {
+      content.style.display = 'none';
+      header.classList.add('collapsed');
+    }
   });
+});
 
   // Sticky Chapter Headers
-  const rightColumn = document.getElementById('right-column');
+  const rightColumn = document.getElementById('column2');
   rightColumn.addEventListener('scroll', () => {
     let currentStickyIndex = -1;
     const chapterSections = document.querySelectorAll('.chapter-section');
