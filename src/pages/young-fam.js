@@ -43,15 +43,35 @@ const SecondPage = () => (
 
 
 <div class="summaries">
-
-
 <Accordion>
 
 <Accordion.Item>
 
         
         <Accordion.Header>
-            Tuesday, September 22, 2026 - 1 Kings 20-22 / 1 Chronicles 1
+            Tuesday, September 22, 2026 - 2 Kings 2-4 / 2 Kings 5
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%202-24&version=NLT;WEB;CJB" target="_blank">1 Kings 2-4</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%205&version=NLT;WEB;CJB" target="_blank">2 Kings 5</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+<Accordion>
+
+<Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
+            Tuesday, September 22, 2026 - 1 Kings 20-22 / 2 Kings 1
         </Accordion.Header>
 
 
@@ -59,7 +79,7 @@ const SecondPage = () => (
         <Accordion.Body>
             <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%2020-22&version=NLT;WEB;CJB" target="_blank">1 Kings 20-22</Link><br/>
 
-            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%201&version=NLT;WEB;CJB" target="_blank">1 Chronicles 1</Link>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%201&version=NLT;WEB;CJB" target="_blank">2 Kings 1</Link>
 
         </Accordion.Body>
 
