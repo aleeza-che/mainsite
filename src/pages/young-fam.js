@@ -55,7 +55,7 @@ const SecondPage = () => (
 
 
         <Accordion.Body>
-            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%202-24&version=NLT;WEB;CJB" target="_blank">1 Kings 2-4</Link><br/>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%202-4&version=NLT;WEB;CJB" target="_blank">1 Kings 2-4</Link><br/>
 
             <Link to="https://www.biblegateway.com/passage/?search=1%20Kings%205&version=NLT;WEB;CJB" target="_blank">2 Kings 5</Link>
 
