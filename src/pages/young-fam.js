@@ -43,13 +43,36 @@ const SecondPage = () => (
 
 
 <div class="summaries">
+
 <Accordion>
 
 <Accordion.Item>
 
         
         <Accordion.Header>
-            Tuesday, September 29, 2026 - 2 Kings 2-4 / 2 Kings 5 Reassigned
+            Tuesday, October 13, 2026 - 2 Kings 6-8 / 2 Kings 9
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%206-8&version=NLT;WEB;CJB" target="_blank">2 Kings 6-8</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%209&version=NLT;WEB;CJB" target="_blank">2 Kings 9</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+<Accordion>
+
+<Accordion.Item eventKey="0">
+
+        
+        <Accordion.Header>
+            Tuesday, October 6, 2026 - 2 Kings 2-4 / 2 Kings 5 Reassigned
         </Accordion.Header>
 
 
@@ -71,7 +94,7 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
-            Tuesday, September 22, 2026 - 2 Kings 2-4 / 2 Kings 5
+            Tuesday, September 29, 2026 - 2 Kings 2-4 / 2 Kings 5
         </Accordion.Header>
 
 
