@@ -49,6 +49,32 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
+            Tuesday, October 27, 2026 - 2 Kings 14-16 / 2 Kings 17
+        </Accordion.Header>
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2014-16&version=NLT;WEB;CJB" target="_blank">2 Kings 14-16</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2017&version=NLT;WEB;CJB" target="_blank">2 Kings 17</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+
+
+
+<Accordion>
+
+<Accordion.Item>
+
+        
+        <Accordion.Header>
             Tuesday, October 20, 2026 - 2 Kings 10-12 / 2 Kings 13
         </Accordion.Header>
 
