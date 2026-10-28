@@ -43,9 +43,43 @@ const SecondPage = () => (
 
 
 <div class="summaries">
+
+
 <Accordion>
 
 <Accordion.Item>
+
+
+        
+        <Accordion.Header>
+            Tuesday, November 3, 2026 - 2 Kings 18-20 / 2 Kings 21
+        </Accordion.Header>
+
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2018-20&version=NLT;WEB;CJB" target="_blank">2 Kings 18-20</Link><br/>
+<Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2017-20&version=NLT;WEB;CJB" target="_blank">2 Kings 17-20 (with recap from last week)</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2021&version=NLT;WEB;CJB" target="_blank">2 Kings 21</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+
+
+
+
+
+
+<Accordion>
+
+<Accordion.Item eventKey="0">
 
         
         <Accordion.Header>
