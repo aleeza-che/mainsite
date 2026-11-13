@@ -52,6 +52,32 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
+            Tuesday, November 17, 2026 - 2 Kings 22-24 / 1 Chronicles 1
+        </Accordion.Header>
+
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2022-24&version=NLT;WEB;CJB" target="_blank">2 Kings 22-24</Link><br/>
+<Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2021-24&version=NLT;WEB;CJB" target="_blank">2 Kings 21-24 (with recap from last week)</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%201&version=NLT;WEB;CJB" target="_blank">2 Chronicles 1</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+<Accordion>
+
+<Accordion.Item eventKey="0">
+
+
+        
+        <Accordion.Header>
             Tuesday, November 10, 2026 - 2 Kings 18-20 / 2 Kings 21
         </Accordion.Header>
 
@@ -69,6 +95,7 @@ const SecondPage = () => (
     </Accordion.Item>
 
 </Accordion>
+
 
 
 
