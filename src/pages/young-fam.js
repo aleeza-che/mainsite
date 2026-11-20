@@ -52,6 +52,33 @@ const SecondPage = () => (
 
         
         <Accordion.Header>
+            Tuesday, November 24, 2026 - 1 Chronicles 2-4 / 1 Chronicles 5
+        </Accordion.Header>
+
+
+
+
+        <Accordion.Body>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%202-4&version=NLT;WEB;CJB" target="_blank">1 Chronicles 2-4</Link><br/>
+<Link to="https://www.biblegateway.com/passage/?search=1%20hronicles%201-4&version=NLT;WEB;CJB" target="_blank">2 Chronicles 1-4 (with recap from last week)</Link><br/>
+
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%205&version=NLT;WEB;CJB" target="_blank">1 Chronicles 5</Link>
+
+        </Accordion.Body>
+
+    </Accordion.Item>
+
+</Accordion>
+
+
+
+<Accordion>
+
+<Accordion.Item eventKey="0">
+
+
+        
+        <Accordion.Header>
             Tuesday, November 17, 2026 - 2 Kings 22-24 / 1 Chronicles 1
         </Accordion.Header>
 
@@ -62,7 +89,7 @@ const SecondPage = () => (
             <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2022-24&version=NLT;WEB;CJB" target="_blank">2 Kings 22-24</Link><br/>
 <Link to="https://www.biblegateway.com/passage/?search=2%20Kings%2021-24&version=NLT;WEB;CJB" target="_blank">2 Kings 21-24 (with recap from last week)</Link><br/>
 
-            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%201&version=NLT;WEB;CJB" target="_blank">2 Chronicles 1</Link>
+            <Link to="https://www.biblegateway.com/passage/?search=1%20Chronicles%201&version=NLT;WEB;CJB" target="_blank">1 Chronicles 1</Link>
 
         </Accordion.Body>
 
